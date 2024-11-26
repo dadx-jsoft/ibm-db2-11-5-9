@@ -1,0 +1,360 @@
+* Sample response file for IBM DB2 FixPak
+* ---------------------------------------
+*
+* Comments are made by placing either a * or a # at the start of a line, or by
+* placing ** or ## after the start of a line to comment out the rest of that
+* line.
+* ============================================================================
+
+* Product Installation
+* --------------------
+PROD                           = FIXPAK
+LIC_AGREEMENT                  = DECLINE   **You must change this to ACCEPT to indicate your acceptance of the license agreement before continuing.
+*REBOOT                        = YES or NO (default=NO)
+*KILL_PROCESSES                = YES or NO (default=NO)
+
+* Copy Name
+* ---------
+* The copy name is the identifier used to refer to the set of DB2 products
+* installed in the same location. Replace the value with the DB2 Copy Name
+* to be applied fixpak on.
+*DB2_COPY_NAME            = DB2             ** char(128)
+
+* The location of the media used to install the machine originally.  This is used in cases where an installation is missing files
+* or something like that during a fixpack update. The SOURCE_MSI_LOCATION keyword should point to the location of the MSI file 
+* used to install the product. This is located in the db2\windows directory on the original installation media. If the installation
+* image is in the original location where the product was installed from, then this keyword is not required.
+* This keyword may be added multiple times for multiple sources.
+* ---------------------------------------------------------------------------------------------------------------------------------
+*SOURCE_MSI_LOCATION           = char(260)
+
+* Global DB2 Registry Variables
+* -----------------------------
+*DB2ACCOUNT                    = BLANK or char(199)
+*DB2ATLD_PORTS                 = BLANK or 1-65535:1-65535
+*DB2ATLD_PWFILE                = BLANK or char()
+*DB2BIDI                       = BLANK, YES or NO
+*DB2BQTIME                     = BLANK or 1 - MAX
+*DB2BQTRY                      = BLANK or 0 - MAX
+*DB2CCMSRV                     = 0-65535
+*DB2CHGPWD_EEE                 = BLANK, YES or NO
+*DB2CHKPTR                     = BLANK, ON or OFF
+*DB2CLIINIPATH                 = BLANK or char(260)
+*DB2CODEPAGE                   = BLANK or 0 - MAX
+*DB2COMM                       = BLANK or APPC, NETBIOS, NPIPE, TCPIP
+*DB2CONNECT_IN_APP_PROCESS     = BLANK, YES or NO
+*DB2COUNTRY                    = BLANK or 1 - 999
+*DB2DBDFT                      = BLANK or char(8)
+*DB2DEFPREP                    = BLANK, ALL, YES or NO
+*DB2DISCOVERYTIME              = BLANK or 20 - MAX
+*DB2DMNBCKCTLR                 = BLANK, ? or char()
+*DB2_ENABLE_LDAP               = BLANK, YES or NO
+*DB2IQTIME                     = BLANK or 1 - MAX
+*DB2JD_PORT_NUMBER             = BLANK or 1024-65536
+*DB2JVIEW                      = BLANK, ON or OFF
+*DB2LDAPHOST                   = BLANK or host name
+*DB2LDAP_BASEDN                = BLANK or char()
+*DB2LDAPCACHE                  = BLANK or char()
+*DB2LDAP_CLIENT_PROVIDER       = BLANK, MICROSOFT or IBM
+*DB2LOADREC                    = BLANK or char(260)
+*DB2LOCK_TO_RB                 = BLANK or STATEMENT
+*DB2NBADAPTERS                 = BLANK or 0, 1, ..., 15
+*DB2NBCHECKUPTIME              = BLANK or 0 - 720
+*DB2NBDISCOVERRCVBUFS          = BLANK or 16 - MAX
+*DB2NBINTRLISTENS              = BLANK or 1 - 10, 1 - 10, ...
+*DB2NBRECVBUFFSIZE             = BLANK or 4096 - 65536
+*DB2NBRECVNCBS                 = BLANK or 1 - 99, 1 - 99, ...
+*DB2NBRESOURCES                = BLANK or (0-15,1-254,1-254,1-254), (0-15,1-254,1-254,1-254), ...
+*DB2NBSENDNCBS                 = BLANK or 1 - 99
+*DB2NBSESSIONS                 = BLANK or 5 - 254, 5 - 254, ...
+*DB2NBXTRANCBS                 = BLANK or 5 - 254, 5 - 254, ...
+*DB2NOEXITLIST                 = BLANK, ON or OFF
+*DB2NTNOCACHE                  = BLANK, ON or OFF
+*DB2NTPRICLASS                 = BLANK, R or H
+*DB2NTWORKSET                  = BLANK or 0-2048, 0-2048
+*DB2OLDEVMON                   = BLANK or char()
+*DB2OPTIONS                    = BLANK or char(): -/+[a,c,e[c|s],n,o,p,s,t,v,w,x] and/or -[f,l,r,z]filename
+*DB2PRIORITIES                 = BLANK or char()
+*DB2RETRY                      = BLANK or 0 - 20000
+*DB2RETRYTIME                  = BLANK or 0 - 7200
+*DB2RQTIME                     = BLANK or 1 - MAX
+*DB2ROUTINE_DEBUG              = BLANK, ON or OFF
+*DB2SERVICETPINSTANCE          = BLANK or char(8)
+*DB2SORCVBUF                   = BLANK or 1024-65536
+*DB2SORT                       = BLANK or char(260)
+*DB2SOSNDBUF                   = BLANK or 1024-65536
+*DB2SYSPLEX_SERVER             = BLANK, 0 or 1
+*DB2SYSTEM                     = char(21)
+*DB2_AVOID_PREFETCH            = BLANK, ON or OFF
+*DB2_CORRELATED_PREDICATES     = BLANK, ON or OFF
+*DB2_FALLBACK                  = BLANK, ON or OFF
+*DB2_FORCE_TRUNCATION          = BLANK, YES or NO
+*DB2_GRP_LOOKUP                = BLANK or char()
+*DB2_HASH_JOIN                 = BLANK, YES or NO
+*DB2_INDEX_FREE                = BLANK or 0 - 60
+*DB2_LIKE_VARCHAR              = BLANK, YES, NO or 0.0 - 5.0 (exclusive)
+*DB2_LOADSORT_STACKSZ          = BLANK or 1 - MAX
+*DB2_NEW_CORR_SQ_FF            = BLANK, ON or OFF
+*DB2_NO_PKG_LOCK               = BLANK, ON or OFF
+*DB2_NUM_FAILOVER_NODES        = BLANK or 0 - 999
+*DB2_PARALLEL_IO               = BLANK, * or 0-4095, 0-4095, ...
+*DB2_PRED_FACTORIZE            = BLANK, YES or NO
+*DB2_RR_TO_RS                  = BLANK, YES or NO
+*DB2_SORT_AFTER_TQ             = BLANK, YES or NO
+*DB2_STPROC_ALLOW_LOCAL_FENCED = BLANK, YES or NO
+*DB2_STPROC_LOOKUP_FIRST       = BLANK, YES or NO
+*DB2_STRIPED_CONTAINERS        = BLANK, ON or OFF
+*DB2_VI_ENABLE                 = BLANK, ON or OFF
+*DB2_VI_DEVICE                 = BLANK or char()
+*DB2_VI_VIPL                   = BLANK or char()
+*DB2CCMSRV                     = BLANK or 0 - 65535
+*DB2ADMINSERVER                = BLANK or char(64) no spaces
+*DB2TEMPDIR                    = BLANK or a valid directory (default = DB2 install directory)
+
+
+* General information for instance to be created
+* ----------------------------------------------
+*INSTANCE                       = DB2
+*DEFAULT_INSTANCE               = DB2
+*DB2.NAME                       = DB2
+*DB2.TYPE                       = ESE, WSE, CLIENT, STANDALONE or SATELLITE
+
+
+* Default Instance Logon Settings
+* -------------------------------
+*DB2.USERNAME                  = char(30) [char(20) for Windows NT]
+*DB2.DOMAIN                    = char(14)
+*DB2.PASSWORD                  = char(14)
+
+
+* Default Instance Auto-start Option
+* ----------------------------------
+*DB2.AUTOSTART                 = YES or NO (default=YES)
+
+
+* Default Instance TCP/IP port number
+*------------------------------------
+*DB2.PORT_NUMBER               = 1024 - 65535
+
+
+* Default Instance Client Import Profile file
+* -------------------------------------------
+*DB2.CLIENT_IMPORT_PROFILE     = filename
+
+
+* Default Instance DBM CFG settings
+* ---------------------------------
+*DB2.AGENTPRI                  = SYSTEM or 0 - 6
+*DB2.AGENT_STACK_SZ            = 8 - 1000
+*DB2.ASLHEAPSZ                 = 1 - 524288
+*DB2.AUDIT_BUF_SZ              = 0 - 65000
+*DB2.AUTHENTICATION            = CLIENT, DCS, DCS_ENCRYPT, SERVER, SERVER_ENCRYPT, KERBEROS(Windows 2000 only) or KRB_SERVER_ENCRYPT(Windows 2000 only)
+*DB2.BACKBUFSZ                 = 16 - 524288
+*DB2.CATALOG_NOAUTH            = YES or NO
+*DB2.COMM_BANDWIDTH            = -1 or 0.1 - 100000.0
+*DB2.CONN_ELAPSE               = 0 - 100
+*DB2.CPUSPEED                  = -1 or 1e-10 - 1
+*DB2.DATALINKS                 = YES or NO
+*DB2.DFTDBPATH                 = <drive letter>:   (not a: or b:, must exist)
+*DB2.DFT_ACCOUNT_STR           = BLANK or char(25)
+*DB2.DFT_CLIENT_COMM           = BLANK or APPC, NETBIOS, TCPIP, NPIPE
+*DB2.DFT_MON_BUFPOOL           = ON or OFF
+*DB2.DFT_MON_LOCK              = ON or OFF
+*DB2.DFT_MON_SORT              = ON or OFF
+*DB2.DFT_MON_STMT              = ON or OFF
+*DB2.DFT_MON_TABLE             = ON or OFF
+*DB2.DFT_MON_UOW               = ON or OFF
+*DB2.DFT_MON_TIMESTAMP         = ON or OFF
+*DB2.DIAGLEVEL                 = 0 - 4
+*DB2.DIAGPATH                  = BLANK or char(215)
+*DB2.DIR_CACHE                 = YES or NO
+*DB2.DIR_OBJ_NAME              = BLANK or char(255) (length of DIR_OBJ_NAME + DIR_PATH_NAME <    = 255)
+*DB2.DIR_PATH_NAME             = BLANK or char(255) (length of DIR_OBJ_NAME + DIR_PATH_NAME <    = 255)
+*DB2.DISCOVER                  = DISABLE, KNOWN or SEARCH
+*DB2.DISCOVER_COMM             = BLANK or NETBIOS, TCPIP
+*DB2.DISCOVER_INST             = ENABLE or DISABLE
+*DB2.DOS_RQRIOBLK              = 4096 - 65535
+*DB2.DRDA_HEAP_SZ              = 16 - 60000
+*DB2.FCM_NUM_ANCHORS           = -1 or 128 - FCM_NUM_RQB
+*DB2.FCM_NUM_BUFFERS           = 128 - 65300
+*DB2.FCM_NUM_CONNECT           = -1 or 128 - FCM_NUM_RQB
+*DB2.FCM_NUM_RQB               = 128 - 120000
+*DB2.FILESERVER                = BLANK or char(48)
+*DB2.INDEXREC                  = ACCESS or RESTART
+*DB2.INTRA_PARALLEL            = SYSTEM, YES or NO
+*DB2.JAVA_HEAP_SZ              = 0 - 4096
+*DB2.JDK_PATH                  = BLANK or char(255)
+*DB2.KEEPDARI                  = YES or NO
+*DB2.MAXAGENTS                 = 1 - 64000
+*DB2.MAXCAGENTS                = -1 or 1 - MAX_COORDAGENTS
+*DB2.MAXDARI                   = -1 or 1 - MAX_COORDAGENTS
+*DB2.MAXTOTFILOP               = 100 - 32768
+*DB2.MAX_CONNRETRIES           = 0 - 100
+*DB2.MAX_COORDAGENTS           = -1 or 1 - MAXAGENTS (MAX_COORDAGENTS + NUM_INITAGENTS cannot be greater than MAXAGENTS)
+*DB2.MAX_LOGICAGENTS           = -1 - 64000 (cannot be less than MAX_COORDAGENTS)
+*DB2.MAX_QUERYDEGREE           = ANY or 0 - 32767
+*DB2.MAX_TIME_DIFF             = 1 - 1440
+*DB2.MIN_PRIV_MEM              = 32 - 112000
+*DB2.MON_HEAP_SZ               = 0 - 60000
+*DB2.NNAME                     = BLANK or char(8)
+*DB2.NOTIFYLEVEL               = 0 - 4
+*DB2.NUMDB                     = 1 - 256
+*DB2.NUM_INITAGENTS            = 1 - NUM_POOLAGENTS (MAX_COORDAGENTS + NUM_INITAGENTS <    = MAXAGENTS)
+*DB2.NUM_INITDARIS             = -1 or 0 - MAXDARI
+*DB2.NUM_POOLAGENTS            = -1 or 1 - MAXAGENTS
+*DB2.PRIV_MEM_THRESH           = -1 or 32 - 112000
+*DB2.QUERY_HEAP_SZ             = 2 - 524288
+*DB2.RESTBUFSZ                 = 16 - 524288
+*DB2.RESYNC_INTERVAL           = 60 - 60000
+*DB2.ROUTE_OBJ_NAME            = BLANK or char(255) (length of SQL_DIR_NAME_SZ)
+*DB2.RQRIOBLK                  = 4096 - 65535
+*DB2.SHEAPTHRES                = 250 - 2097152
+*DB2.SPM_LOG_FILE_SZ           = 4 - 1000
+*DB2.SPM_LOG_PATH              = BLANK or char(226)
+*DB2.SPM_MAX_RESYNC            = 10 - 256
+*DB2.SPM_NAME                  = BLANK or char(8)
+*DB2.START_STOP_TIME           = 1 - 1440
+*DB2.SVCENAME                  = BLANK or char(14)
+*DB2.SYSADM_GROUP              = BLANK or char(30)
+*DB2.SYSCTRL_GROUP             = BLANK or char(30)
+*DB2.SYSMAINT_GROUP            = BLANK or char(30)
+*DB2.TM_DATABASE               = BLANK or char(8)
+*DB2.TP_MON_NAME               = BLANK or char(19)
+*DB2.TRUST_ALLCLNTS            = YES, NO or DRDAONLY
+*DB2.TRUST_CLNTAUTH            = CLIENT or SERVER
+*DB2.UDF_MEM_SZ                = 128 - 60000
+
+
+* Default Instance DB2 Registry Variables
+* ---------------------------------------
+*DB2.DB2ACCOUNT                = BLANK or char(199)
+*DB2.DB2ATLD_PORTS             = BLANK or 1-65535:1-65535
+*DB2.DB2ATLD_PWFILE            = BLANK or char()
+*DB2.DB2BIDI                   = BLANK, YES or NO
+*DB2.DB2BQTIME                 = BLANK or 1 - MAX
+*DB2.DB2BQTRY                  = BLANK or 0 - MAX
+*DB2.DB2CHKPTR                 = BLANK, ON or OFF
+*DB2.DB2CLIINIPATH             = BLANK or char(260)
+*DB2.DB2CODEPAGE               = BLANK or 0 - MAX
+*DB2.DB2COMM                   = BLANK or APPC, NETBIOS, NPIPE, TCPIP
+*DB2.DB2CONNECT_IN_APP_PROCESS = BLANK, YES or NO
+*DB2.DB2COUNTRY                = BLANK or 1 - 999
+*DB2.DB2DBDFT                  = BLANK or char(8)
+*DB2.DB2DEFPREP                = BLANK, ALL, YES or NO
+*DB2.DB2DISCOVERYTIME          = BLANK or 20 - MAX
+*DB2.DB2DMNBCKCTLR             = BLANK, ? or char()
+*DB2.DB2IQTIME                 = BLANK or 1 - MAX
+*DB2.DB2JD_PORT_NUMBER         = BLANK or 1024-65536
+*DB2.DB2JVIEW                  = BLANK, ON or OFF
+*DB2.DB2LOADREC                = BLANK or char(260)
+*DB2.DB2LOCK_TO_RB             = BLANK or STATEMENT
+*DB2.DB2NBADAPTERS             = BLANK or 0, 1, ..., 15
+*DB2.DB2NBCHECKUPTIME          = BLANK or 0 - 720
+*DB2.DB2NBDISCOVERRCVBUFS      = BLANK or 16 - MAX
+*DB2.DB2NBINTRLISTENS          = BLANK or 1 - 10, 1 - 10, ...
+*DB2.DB2NBRECVBUFFSIZE         = BLANK or 4096 - 65536
+*DB2.DB2NBRECVNCBS             = BLANK or 1 - 99, 1 - 99, ...
+*DB2.DB2NBRESOURCES            = BLANK or (0-15,1-254,1-254,1-254), (0-15,1-254,1-254,1-254), ...
+*DB2.DB2NBSENDNCBS             = BLANK or 1 - 99
+*DB2.DB2NBSESSIONS             = BLANK or 5 - 254, 5 - 254, ...
+*DB2.DB2NBXTRANCBS             = BLANK or 5 - 254, 5 - 254, ...
+*DB2.DB2NOEXITLIST             = BLANK, ON or OFF
+*DB2.DB2NTNOCACHE              = BLANK, ON or OFF
+*DB2.DB2NTPRICLASS             = BLANK, R or H
+*DB2.DB2NTWORKSET              = BLANK or 0-2048,0-2048
+*DB2.DB2OLDEVMON               = BLANK or char()
+*DB2.DB2OPTIONS                = BLANK or char(): -/+[a,c,e[c|s],n,o,p,s,t,v,w,x] and/or -[f,l,r,z]filename
+*DB2.DB2PORTRANGE              = 0-65535:0-65535
+*DB2.DB2PRIORITIES             = BLANK or char()
+*DB2.DB2RETRY                  = BLANK or 0 - 20000
+*DB2.DB2RETRYTIME              = BLANK or 0 - 7200
+*DB2.DB2RQTIME                 = BLANK or 1 - MAX
+*DB2.DB2ROUTINE_DEBUG          = BLANK, ON or OFF
+*DB2.DB2SATELLITEAPPVER        = BLANK or char(18)
+*DB2.DB2SATELLITEID            = BLANK or char(20)
+*DB2.DB2SORCVBUF               = BLANK or 1024-65536
+*DB2.DB2SORT                   = BLANK or char(260)
+*DB2.DB2SOSNDBUF               = BLANK or 1024-65536
+*DB2.DB2SYSPLEX_SERVER         = BLANK, 0 or 1
+*DB2.DB2_AVOID_PREFETCH        = BLANK, ON or OFF
+*DB2.DB2_CORRELATED_PREDICATES = BLANK, ON or OFF
+*DB2.DB2_FALLBACK              = BLANK, ON or OFF
+*DB2.DB2_FORCE_TRUNCATION      = BLANK, YES or NO
+*DB2.DB2_GRP_LOOKUP            = BLANK or char()
+*DB2.DB2_HASH_JOIN             = BLANK, YES or NO
+*DB2.DB2_INDEX_FREE            = BLANK or 0 - 60
+*DB2.DB2_LIKE_VARCHAR          = BLANK, YES, NO or 0.0 - 5.0 (exclusive)
+*DB2.DB2_LOADSORT_STACKSZ      = BLANK or 1 - MAX
+*DB2.DB2_NO_PKG_LOCK           = BLANK, ON or OFF
+*DB2.DB2_NUM_FAILOVER_NODES    = BLANK or 0 - 999
+*DB2.DB2_PARALLEL_IO           = BLANK, * or 0-4095, 0-4095, ...
+*DB2.DB2_PRED_FACTORIZE        = BLANK, YES or NO
+*DB2.DB2_RR_TO_RS              = BLANK, YES or NO
+*DB2.DB2_SORT_AFTER_TQ         = BLANK, YES or NO
+*DB2.DB2_STRIPED_CONTAINERS    = BLANK, ON or OFF
+*DB2.DB2_VI_ENABLE             = BLANK, ON or OFF
+*DB2.DB2_VI_DEVICE             = BLANK or char()
+*DB2.DB2_VI_VIPL               = BLANK or char()
+*DB2.DB2NBCHECKUPTIME                   = BLANK, 1-720 (Default=1)
+*DB2.DB2NBINTRLISTENS                   = BLANK, 1-10, Multiple values should be separated by commas (Default=1)
+*DB2.DB2NBRECVBUFFSIZE                  = BLANK, 4096-65536 (Default=4096)
+*DB2.DB2NBRECVNCBS                      = BLANK, 1-99 (Default=10)
+*DB2.DB2NBSENDNCBS                      = BLANK, 1-720 (Default=6)
+*DB2.DB2NBSESSIONS                      = BLANK, 5-254
+*DB2.DB2NBXTRANCBS                      = BLANK, 5-254 (Default=5)
+*DB2.DB2REMOTEPREG                      = BLANK, char(64) no spaces Any valid Windows NT machine name
+*DB2.DB2INSTOWNER                       = BLANK, char(30) [char(20) for Windows NT]
+*DB2.DB2_DJ_INI                         = BLANK, char(260) (Default=db2_install_directory\cfg\db2dj.ini)
+*DB2.DB2_ANTIJOIN                       = BLANK, YES, NO or EXTEND (Default=NO in a ESE, Default=YES in a non-ESE)
+*DB2.DB2TERRITORY                       = BLANK, BR CN DE DK FI FR EN ES IT JP KR NO PL RU SE TW (default=Operating System Language)
+*DB2.DB2_COLLECT_TS_REC_INFO            = BLANK, ON, OFF (Default=OFF)
+*DB2.DB2_MIGRATE_TS_INFO                = BLANK, char(260)
+*DB2.DB2PROCESSORS                      = BLANK, 0-n-1 (where n= the number of processors)
+*DB2.DB2ASSUMEUPDATE                    = BLANK, ON, OFF (Default=OFF)
+*DB2.DB2_SKIPDELETED                    = BLANK, ON, OFF (Default=OFF)
+*DB2.DLFM_NUM_ARCHIVE_SUBSYSTEMS        = BLANK, 1-MAX_INT
+*DB2.DB2_SQLROUTINE_PREPOPTS            = BLANK, BLOCKING {UNAMBIG | ALL | NO} DATETIME {DEF | USA | EUR | ISO | JIS | LOC} DEGREE {1 | degree-of-parallelism | ANY} DYNAMICRULES {BIND | RUN} EXPLAIN {NO | YES | ALL} EXPLSNAP {NO | YES | ALL} FEDERATED {NO | YES} INSERT {DEF | BUF} ISOLATION {CS | RR | UR | RS | NC} QUERYOPT optimization-level VALIDATE {RUN | BIND}
+*DB2.DB2_INDEX_TYPE2                    = BLANK, ON, OFF (Default=ON)
+*DB2.DB2_ENABLE_SINGLE_NIS_GROUP        = BLANK, TRUE,FALSE
+*DB2.DB2_APM_PERFORMANCE                = BLANK, ON, OFF (Default=OFF)
+*DB2.DB2_XBSA_LIBRARY                   = BLANK, char(260)
+*DB2.DB2_FMP_COMM_HEAPSZ                = BLANK, 20mb or enough space to run 10 fenced routines (whichever is larger)
+*DB2.DB2_EVALUNCOMMITTED                = BLANK, ON, OFF (Default=ON)
+*DB2.DB2CONSOLECP                       = BLANK, all valid code page values
+*DB2.DB2HTSTACKOPTIMIZATION             = BLANK, 0,1,2, which is 0 for off, 1 for on and 2 to dump stack 
+*DB2.DB2_KEEPTABLELOCK                  = BLANK, ON, OFF (Default=OFF)
+*DB2.DB2GRAPHICUNICODESERVER            = BLANK, ON, OFF (Default=OFF)
+*DB2.DB2_MINIMIZE_LISTPREFETCH          = BLANK, YES, NO (Default=NO)
+*DB2.DB2_TRUSTED_BINDIN                 = BLANK, ON, OFF, CHECK (Default=OFF)
+*DB2.DB2_CLPPROMPT                      = BLANK, Any text string of length less than 100 that contains zero or more of the following tokens 1%i, %d, %ia, %da, or %n.
+*DB2.DB2_FORCE_APP_ON_MAX_LOG           = BLANK, TRUE,FALSE (Default=TRUE)
+*DB2.DB2_CLP_EDITOR                     = BLANK, editor program, Default=Notepad
+*DB2.DB2_CLP_HISTSIZE                   = BLANK, 1-500 (Default=20)
+*DB2.DB2_LOAD_COPY_NO_OVERRIDE          = BLANK, LOCAL, DOMAIN, GLOBAL (Default=DOMAIN)
+*DB2.DB2_MAX_NON_TABLE_LOCKS            = BLANK, 0-MAX_INT
+*DB2.DB2_USE_ALTERNATE_PAGE_CLEANING    = BLANK, ON, OFF (Default=OFF)
+*DB2.DB2_NO_MPFA_FOR_NEW_DB             = BLANK, YES, NO (Default=NO)
+*DB2.DB2_OBJECT_TABLE_ENTRIES           = BLANK, 0-50000 (Default=0)
+*DB2.DB2_VIEW_REOPT_VALUES              = BLANK, YES, NO (Default=NO)
+*DB2.DB2_SELUDI_COMM_BUFFER             = BLANK, ON, OFF (Default=OFF)
+
+* Information Center Settings:
+* ----------------------------
+* The default location for accessing DB2 documentation is the IBM Web site.
+* Only edit this section if you wish to access the DB2 documentation from 
+* a different location, such as your local computer or an intranet server.
+* DB2_DOCHOST                            = Host name of where the Information Center server is installed. Specify "DB2_DOCHOST=localhost" for local computer.
+* DB2_DOCPORT                            = 1-65535: The Port number of the Information Center server.
+
+* Enhanced security settings
+* ------------------------------------------------------
+* DB2_EXTSECURITY               = YES
+* DB2_USERSGROUP                = DB2USERS
+* DB2_ADMINGROUP                = DB2ADMNS
+* NO CONFIG OPTION
+* --------------------------
+* This option allows you to install DB2 with only the mandatory configuration.  You will need
+* to create a DB2 instance manually in order to use DB2.  Other configuration may also be required
+* depending on how you intend to use DB2.  For more information on configuring DB2 please see
+* the Installation & Configuration Supplement, DB2 Administration Guide and the DB2 Command Reference.
+*NO_CONFIG                      = YES or NO **Default=NO

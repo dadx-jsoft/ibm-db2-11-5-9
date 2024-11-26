@@ -1,0 +1,3 @@
+Der er opstået en fejl under aktivering af Startvindue til DB2 Installation. Fejlen optræder typisk, når Startvindue til DB2 Installation ikke kan finde en understøttet browser (Firefox 2.0+, Mozilla 1.7+, Internet Explorer 6.0+, SeaMonkey 1.1.4+). 
+
+Der er en opdateret liste over understøttede browsere i DB2 Informationscenter (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1).

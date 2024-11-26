@@ -1,0 +1,4 @@
+DB2:n asennuksen aloitusohjelman aloituksessa on ilmennyt virhe.  Tämä virhe aiheutuu yleensä siitä, että DB2:n asennuksen
+aloitusohjelma ei löydä tuettua selainta (Firefox 2.0+, Mozilla 1.7+, Internet Explorer 6.0+ tai SeaMonkey 1.1.4+). 
+
+DB2 Information Center -sivustossa (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1) on ajanmukainen luettelo tuetuista selaimista.

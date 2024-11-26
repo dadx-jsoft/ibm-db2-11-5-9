@@ -1,0 +1,3 @@
+Ocorreu um erro ao iniciar a Barra de Ativação da Configuração do DB2.  Geralmente, este erro ocorre quando a Barra de Ativação da Configuração do DB2 não consegue localizar um navegador suportado (Firefox 2.0+, Mozilla 1.7+, Internet Explorer 6.0+, SeaMonkey 1.1.4+). 
+
+Verifique o Centro de Informações do DB2 (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1) para obter uma lista atualizada de navegadores suportados.

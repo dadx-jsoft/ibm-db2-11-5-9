@@ -1,0 +1,22 @@
+# This file is for the language: en_US
+DB2_SETUP=DB2 安装
+LANGUAGE=语言
+RESPONSE_FILE=响应文件
+LOG_FILE=日志文件
+TRACE_FILE=跟踪文件
+PATH_NAME=安装路径
+HELP_OPTION=生成此用法消息。
+HELP_OPTION=生成此用法消息。
+C_OPTION=DB2 安装立即返回，不等待子进程。
+F_OPTION=强制在安装前停止任何 db2 进程。
+I_OPTION=首选语言的两个字母的代码。
+L_OPTION=日志文件的完整路径和名称。
+M_OPTION=运行静默安装时显示进度条。在 Windows 7 系统上，可能会显示一些提示。
+P_OPTION=安装目录的完整路径名。
+U_OPTION=响应文件的完整路径和名称。
+TRACE_OPTION=创建带有安装跟踪信息的文件。
+ERROR_REQUESTED_LANGUAGE=请求的语言“%s”未包括在此 DB2 安装映像中。
+ERROR_RSP_FILE_INVALID=错误：遇到与响应文件“%s”有关的问题。该文件不存在。
+ERROR_RSP_KW_INVALID=错误：遇到与响应文件“%s”有关的问题。在该响应文件中，关键字“%s”无效。
+IMSG_PICKER_PATH_NAME=  DB2 安装路径：
+IMSG_CLIPICKER_PATH_NAME=  安装路径：

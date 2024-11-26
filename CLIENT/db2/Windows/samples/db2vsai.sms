@@ -1,0 +1,42 @@
+[PDF]
+Version=2.0
+
+[Setup]
+Name=Setup
+Comment=Setup
+CommandLine=setup.exe -u db2\Windows\samples\db2vsai.rsp
+EstimatedDiskSpace=200MB
+EstimatedRunTime=40
+EnableRunTimeMonitoring=False
+;The following keywords/values are required for Tivoli install 
+;SupportedClients=Win NT (i386)
+;Win NT (i386) MinVersion1=5.00.0000.0
+;Win NT (i386) MaxVersion1=5.99.9999.9999
+CanRunWhen=UserLoggedOn
+UserInputRequired=FALSE
+AdminRightsRequired=TRUE
+Assignment=FirstUser
+
+[Uninstall]
+Name=Uninstall
+Comment=Uninstall
+CommandLine=db2\Windows\issetup.exe /x /S /v/qn /w
+EstimatedDiskSpace=0MB
+EstimatedRunTime=30
+EnableRunTimeMonitoring=False
+;The following keywords/values are required for Tivoli install
+;SupportedClients=Win NT (i386)
+;Win NT (i386) MinVersion2=5.00.0000.0
+;Win NT (i386) MaxVersion2=5.99.9999.9999
+CanRunWhen=UserLoggedOn
+UserInputRequired=FALSE
+AdminRightsRequired=TRUE
+Assignment=FirstUser
+
+[Package Definition]
+Name=IBM Database Add-Ins for Visual Studio
+Version=11.5
+Publisher=IBM
+Language=English
+Comment=IBM Database Add-Ins for Visual Studio for Windows XP, Windows 2003, and Windows Vista
+Programs=Setup, Uninstall

@@ -1,0 +1,72 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="stylesheet" type="text/css" media="all" href="LP_nav.css">
+<link rel="stylesheet" type="text/css" media="all" href="LP_lang.css">
+<script type="text/javascript" LANGUAGE="JavaScript" src="LP_nav.js"></script>
+<script type="text/javascript" LANGUAGE="JavaScript" src="db2version.js"></script>
+</head>
+
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+<script src="../jscp.js">
+<!-- MASTER TABLE -->
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		
+		<td class="content">  
+			<!-- CONTENT FRAME -->
+			<div class="content_width">
+				<p>
+					<span class="head1">
+						<%= property('LPAD_RELNOTES_TITLE') %>
+					</span> 				
+				</p>
+				<p>
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr> 
+							<td class="imageInText_placement">
+								<img src="images/LP_release.gif" width="65" height="58" border="0">
+							</td>
+							<td class="tableText">
+								<%= property('LPAD_RELNOTES_DESC1') %>
+							</td>
+						</tr>
+					</table>
+					<p>
+						<a class="solo" HREF="javascript:linkToRelease()">
+							<img src="images/info_link.gif" border="0">
+							<%= property('LPAD_RELNOTES_LINK') %>
+						</a>
+					</p>
+				</p>
+				<br>
+				<p>
+				  <%= property('LPAD_RELNOTES_NEW_DESC') %>
+				  <br>
+                  <a class="solo" HREF="javascript:linkToWhatsNew()">
+					<img src="images/info_link.gif" border="0">
+					<%= property('LPAD_RELNOTES_NEW_LINK') %>
+		          </a>
+			  </p>
+			  <p>
+  			    <%= top.formatmsg(property('LPAD_RELNOTES_CHANGED_DESC'), '<span class="versionArea">&nbsp;</span>') %>
+  			    <br>
+			    <a class="solo" HREF="javascript:linkToWhatsChanged()">
+						<img src="images/info_link.gif" border="0">
+						<%= property('LPAD_RELNOTES_CHANGED_LINK') %>
+			    </a>  			  
+			  </p>
+			</div>
+		</td>
+	</tr>
+</table>
+<!-- END OF MASTER TABLE -->
+</script>
+<!-- import javascripts -->
+<script type="text/javascript" language="JavaScript">
+	displayLPVersion();
+</script>
+</body>
+</html>

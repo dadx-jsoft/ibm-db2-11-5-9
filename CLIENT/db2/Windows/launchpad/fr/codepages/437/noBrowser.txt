@@ -1,0 +1,3 @@
+Une erreur s'est produite lors du démarrage du tableau de bord de configuration DB2.  Elle survient généralement lorsque le tableau de bord de configuration DB2 ne trouve pas de navigateur pris en charge (Firefox 2.0+, Mozilla 1.7+, Internet Explorer 6.0+, SeaMonkey 1.1.4+). 
+
+Reportez-vous au centre de documentation DB2 (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1) pour obtenir la liste à jour des navigateurs pris en charge.

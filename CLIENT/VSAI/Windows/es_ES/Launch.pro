@@ -1,0 +1,22 @@
+# This file is for the language: en_US
+DB2_SETUP=Instalación de DB2
+LANGUAGE=idioma
+RESPONSE_FILE=archivo de respuestas
+LOG_FILE=archivo de anotaciones cronológicas
+TRACE_FILE=archivo de rastreo
+PATH_NAME=vía de acceso de instalación
+HELP_OPTION=genera este mensaje de uso.
+HELP_OPTION=genera este mensaje de uso.
+C_OPTION=la instalación de DB2 vuelve inmediatamente, no espera a los procesos hijo.
+F_OPTION=fuerza la detención de cualquier proceso DB2 antes de la instalación.
+I_OPTION=código de dos letras para el idioma preferido.
+L_OPTION=vía de acceso completa y nombre del archivo de anotaciones cronológicas.
+M_OPTION=visualiza una barra de progreso cuando se ejecuta una instalación silenciosa. En los sistemas Windows 7, puede que se visualicen mensajes de solicitud de información.
+P_OPTION=nombre de la vía de acceso completa para el directorio de instalación.
+U_OPTION=vía de acceso completa y nombre del archivo de respuestas.
+TRACE_OPTION=crea un archivo con información de rastreo para la instalación.
+ERROR_REQUESTED_LANGUAGE=El idioma solicitado, '%s', no está incluido en la imagen de instalación de DB2.
+ERROR_RSP_FILE_INVALID=ERROR: Se ha encontrado un problema con el archivo de respuestas '%s'. El archivo no existe.
+ERROR_RSP_KW_INVALID=ERROR: Se ha encontrado un problema con el archivo de respuestas '%s'. La palabra clave '%s' no es válida en el archivo de respuestas.
+IMSG_PICKER_PATH_NAME=  Vía de acceso de instalación de DB2:
+IMSG_CLIPICKER_PATH_NAME=  Vía de acceso de instalación:

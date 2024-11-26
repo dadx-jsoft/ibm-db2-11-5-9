@@ -1,0 +1,4 @@
+Wyst¹pi³ b³¹d podczas uruchamiania startera programu instalacyjnego DB2.  Ten b³¹d wystêpuje zazwyczaj wtedy, gdy starter programu instalacyjnego DB2 nie mo¿e znaleŸæ obs³ugiwanej przegl¹darki(Firefox 2.0+, Mozilla 1.7+, Internet Explorer 6.0+, SeaMonkey 1.1.4+). 
+
+Aktualn¹ listê obs³ugiwanych przegl¹darek mo¿na sprawdziæ w Centrum
+informacyjnym DB2 (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1).

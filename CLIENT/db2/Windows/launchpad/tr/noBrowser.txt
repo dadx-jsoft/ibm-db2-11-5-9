@@ -1,0 +1,4 @@
+DB2 Kuruluþu Baþlatma Panosu baþlatýlýrken hata oluþtu.  Bu hata genellikle, DB2 Kuruluþu Baþlatma Panosu desteklenen
+bir tarayýcý (Firefox 2.0+, Mozilla 1.7+, Internet Explorer 6.0+, SeaMonkey 1.1.4+) bulamadýðýnda oluþur. 
+
+Desteklenen tarayýcýlarýn güncel listesi için DB2 Information Center olanaðýna bakýn (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1).

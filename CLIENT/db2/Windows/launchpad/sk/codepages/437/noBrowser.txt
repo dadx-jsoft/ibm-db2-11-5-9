@@ -1,0 +1,4 @@
+Chyba nastala poèas spúšania spúšacieho panelu nastavenia DB2.  Táto chyba sa zvyèajne vyskytuje, keï spúšací panel nastavenia DB2
+nedokáe nájs podporovanı prehliadaè (Firefox 2.0+, Mozilla 1.7+, Internet Explorer 6.0+, SeaMonkey 1.1.4+). 
+
+Aktuálny zoznam podporovanıch prehliadaèov nájdete v Informaènom centre DB2 (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1).

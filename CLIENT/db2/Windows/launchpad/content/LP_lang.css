@@ -1,0 +1,8 @@
+/* Local Language Specific Definitions */
+
+/* To modify the size of the product action buttons modify the width and margins below. */
+
+.prodbutton input {
+	width:  30%;
+	margin:  0px 10px 0px 0px;
+}

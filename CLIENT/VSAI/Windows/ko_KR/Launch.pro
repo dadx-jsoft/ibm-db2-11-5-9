@@ -1,0 +1,22 @@
+# This file is for the language: en_US
+DB2_SETUP=DB2 설치
+LANGUAGE=언어
+RESPONSE_FILE=응답 파일
+LOG_FILE=로그 파일
+TRACE_FILE=추적 파일
+PATH_NAME=설치 경로
+HELP_OPTION=사용 메시지를 생성합니다.
+HELP_OPTION=사용 메시지를 생성합니다.
+C_OPTION=DB2 설치는 즉시 리턴되며 하위 프로세스에서 대기하지 않습니다.
+F_OPTION=설치하기 전에 모든 db2 프로세스를 강제로 종료합니다.
+I_OPTION=원하는 언어의 두 문자로된 코드
+L_OPTION=로그 파일의 전체 경로 및 이름
+M_OPTION=자동 설치를 실행할 때 진행 표시줄을 표시합니다. Windows 7 시스템에서는 일부 프롬프트가 표시될 수도 있습니다.
+P_OPTION=설치 디렉토리에 대한 전체 경로 이름.
+U_OPTION=응답 파일의 전체 경로 및 이름
+TRACE_OPTION=설치 추적 정보를 갖는 파일을 작성합니다.
+ERROR_REQUESTED_LANGUAGE=요청된 언어 '%s'이(가) 이 DB2 설치 이미지에 들어있지 않습니다.
+ERROR_RSP_FILE_INVALID=오류: '%s' 응답 파일에서 문제점이 발생했습니다. 파일이 존재하지 않습니다.
+ERROR_RSP_KW_INVALID=오류: '%s' 응답 파일에서 문제점이 발생했습니다. 응답 파일에서 '%s' 키워드가 유효하지 않습니다.
+IMSG_PICKER_PATH_NAME=  DB2 설치 경로:
+IMSG_CLIPICKER_PATH_NAME=  설치 경로:

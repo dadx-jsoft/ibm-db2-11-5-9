@@ -1,0 +1,3 @@
+Ocorreu um erro ao iniciar o DB2 Setup Launchpad.  Este erro normalmente ocorre quando o DB2 Setup Launchpad não pode localizar um browser suportado (Firefox 2.0+, Mozilla 1.7+, Internet Explorer 6.0+, SeaMonkey 1.1.4+). 
+
+Verifique no Centro de Informações do DB2 (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1) se existe uma lista actualizada de browsers suportados.

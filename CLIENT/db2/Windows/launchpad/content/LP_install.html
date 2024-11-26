@@ -1,0 +1,523 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="stylesheet" type="text/css" media="all" href="LP_nav.css">
+<link rel="stylesheet" type="text/css" media="all" href="LP_lang.css">
+<script type="text/javascript" LANGUAGE="JavaScript" src="LP_nav.js"></script>
+<script type="text/javascript" LANGUAGE="JavaScript" src="db2version.js"></script>
+<script type="text/javascript" LANGUAGE="JavaScript" src="LP_install.js"></script>
+</head>
+
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+<!-- MASTER TABLE -->
+<script src="../jscp.js">
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+
+	<tr valign="top">
+		
+		<td class="content">  
+			<!-- CONTENT FRAME -->
+			<div class="content_width">
+				<p>
+					<span class="head1">
+						<%= property('INSTALL_TITLE') %>
+					</span> 				
+				</p>
+				<p>
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr> 
+							<td class="imageInText_placement">
+								<img src="images/LP_install.gif" width="65" height="58" border="0">
+							</td>
+							<td class="tableText">
+								<%= property('INTRO_MSG') %>
+							</td>
+						</tr>
+					</table>
+					
+					<!-- Product List Ends Here-->
+					<p>						
+						<div id="allproducts">
+							<!-- single product to install -->
+							<div id="prod_aese">
+								<div id="product">
+									<h1>										
+										<%= top.formatmsg(property('AESE_NAME'),'<span class="versionArea">&nbsp;</span>') %>										
+									</h1>
+									<h2>
+										<%= top.formatmsg(property('AESE_DESCR')) %>
+									</h2>
+									<div class="buttons">
+										<span id="btn_aese_new"><input type="button" name="aese" value="<%=property('INSTALL_NEW_BUTTON')%>" onClick="javascript:installNew(event)"></span>
+										<span id="btn_aese_exist"><input type="button" name="aese" value="<%=property('INSTALL_EXISTING_BUTTON')%>" onClick="javascript:installExisting(event)"></span>
+										<span id="btn_aese_error">
+											<table  border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td valign="top" class="error_box">
+														<input type="button" name="client" value="<%=property('INSTALL_EXISTING_BUTTON')%>" class="disabled" disabled="disabled">
+													</td>
+													<td valign="top">
+														<img src="images/install_error.gif" alt="" class="install_error">
+													</td>
+													<td valign="top" class="error_msg">	
+														<strong><%=property('missing_prereqs_msg')%></strong>
+														<br>
+														<%= top.formatmsg(property('missing_prereq_AESE'),'<a href="javascript:linkToAESE();" class="solo solo_ul">', '</a>') %>					
+													</td>
+												</tr>
+											</table>
+										</span>
+									</div>
+								</div>
+							</div>
+													
+							<!-- single product to install -->
+							<div id="prod_ese">
+								<div id="product">
+									<h1>										
+										<%= top.formatmsg(property('ESE_NAME'),'<span class="versionArea">&nbsp;</span>') %>										
+									</h1>
+									<h2>
+										<%=top.formatmsg(property('ESE_DESCR'), '<br><br>', '<br>', '<ul>', '<li>', '</li>', '</ul>') %>
+									</h2>
+									<div class="buttons">
+										<span id="btn_ese_new"><input type="button" name="ese" value="<%=property('INSTALL_NEW_BUTTON')%>" onClick="javascript:installNew(event)"></span>
+										<span id="btn_ese_exist"><input type="button" name="ese" value="<%=property('INSTALL_EXISTING_BUTTON')%>" onClick="javascript:installExisting(event)"></span>
+										<span id="btn_ese_error">
+											<table  border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td valign="top" class="error_box">
+														<input type="button" name="client" value="<%=property('INSTALL_EXISTING_BUTTON')%>" class="disabled" disabled="disabled">
+													</td>
+													<td valign="top">
+														<img src="images/install_error.gif" alt="" class="install_error">
+													</td>
+													<td valign="top" class="error_msg">	
+														<strong><%=property('missing_prereqs_msg')%></strong>
+														<br>
+														<%= top.formatmsg(property('missing_prereq_ESE'),'<a href="javascript:linkToESE();" class="solo solo_ul">', '</a>') %>					
+													</td>
+												</tr>
+											</table>
+										</span>
+									</div>
+								</div>
+							</div>
+
+							<!-- single product to install -->
+							<div id="prod_wse">
+								<div id="product">
+									<h1>
+										<%= top.formatmsg(property('WSE_NAME'),'<span class="versionArea">&nbsp;</span>') %>		
+									</h1>
+									<h2>
+										<%= top.formatmsg(property('WSE_DESCR')) %>	
+									</h2>
+									<div class="buttons">
+										<span id="btn_wse_new"><input type="button" name="wse" value="<%=property('INSTALL_NEW_BUTTON')%>" onClick="javascript:installNew(event)"></span>
+										<span id="btn_wse_exist"><input type="button" name="wse" value="<%=property('INSTALL_EXISTING_BUTTON')%>" onClick="javascript:installExisting(event)"></span>      
+										<span id="btn_wse_error">
+											<table  border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td valign="top" class="error_box">
+														<input type="button" name="client" value="<%=property('INSTALL_EXISTING_BUTTON')%>" class="disabled" disabled="disabled">
+													</td>
+													<td valign="top">
+														<img src="images/install_error.gif" alt="" class="install_error">
+													</td>
+													<td valign="top" class="error_msg">	
+														<strong><%=property('missing_prereqs_msg')%></strong>
+														<br>
+														<%= top.formatmsg(property('missing_prereq_WSE'),'<a href="javascript:linkToWSE();" class="solo solo_ul">','</a>') %>		
+													</td>
+												</tr>
+											</table>
+										</span>
+									</div>
+								</div>
+							</div>	
+
+							<!-- single product to install -->
+							<div id="prod_exp">
+								<div id="product">
+									<h1>
+										<%= top.formatmsg(property('EXP_NAME'),'<span class="versionArea">&nbsp;</span>') %>
+									</h1>
+									<h2>
+										<%= top.formatmsg(property('EXP_DESCR')) %>
+									</h2>
+									<div class="buttons">
+										<span id="btn_exp_new"><input type="button" name="exp" value="<%=property('INSTALL_NEW_BUTTON')%>" onClick="javascript:installNew(event)"></span>
+										<span id="btn_exp_exist"><input type="button" name="exp" value="<%=property('INSTALL_EXISTING_BUTTON')%>" onClick="javascript:installExisting(event)"></span>      
+										<span id="btn_exp_error">
+											<table  border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td valign="top" class="error_box">
+														<input type="button" name="client" value="<%=property('INSTALL_EXISTING_BUTTON')%>" class="disabled" disabled="disabled">
+													</td>
+													<td valign="top">
+														<img src="images/install_error.gif" alt="" class="install_error">
+													</td>
+													<td valign="top" class="error_msg">	
+														<strong><%=property('missing_prereqs_msg')%></strong>
+														<br>
+														<%= top.formatmsg(property('missing_prereq_EXP'),'<a href="javascript:linkToExp();" class="solo solo_ul">','</a>') %>
+													</td>
+												</tr>
+											</table>
+										</span>      
+									</div>
+								</div>
+							</div>
+							
+							<!-- single product to install -->
+							<div id="prod_expc">
+								<div id="product">
+									<h1>
+									<%= top.formatmsg(property('EXPC_NAME'),'<span class="versionArea">&nbsp;</span>') %>
+									</h1>
+									<h2>
+										<%= top.formatmsg(property('EXPC_DESCR')) %>
+									</h2>
+									<div class="buttons">
+										<span id="btn_expc_new"><input type="button" name="expc" value="<%=property('INSTALL_NEW_BUTTON')%>" onClick="javascript:installNew(event)"></span>
+										<span id="btn_expc_exist"><input type="button" name="expc" value="<%=property('INSTALL_EXISTING_BUTTON')%>" onClick="javascript:installExisting(event)"></span>      
+										<span id="btn_expc_error">
+											<table  border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td valign="top" class="error_box">
+														<input type="button" name="client" value="<%=property('INSTALL_EXISTING_BUTTON')%>" class="disabled" disabled="disabled">
+													</td>
+													<td valign="top">
+														<img src="images/install_error.gif" alt="" class="install_error">
+													</td>
+													<td valign="top" class="error_msg">	
+														<strong><%=property('missing_prereqs_msg')%></strong>
+														<br>
+														<%= top.formatmsg(property('missing_prereq_EXPC'),'<a href="javascript:linkToExpC();" class="solo solo_ul">','</a>') %>
+													</td>
+												</tr>
+											</table>
+										</span>      
+									</div>
+								</div>
+							</div>
+
+							
+   					        <!-- application development tools paragraph - this is not a real product, so this is a hack -->
+                                                <!-- get the tools not required as new DS panel added -->
+					  <!--  <% if (top.displayToolsDescription()) { %>
+							    <div id="tools">
+								    <div id="product">
+									    <h1>
+										    <%= property('TOOLS_NAME') %>
+									    </h1>
+									    <h2>
+										    <%= property('TOOLS_DESCR') %>				
+									    </h2>
+						                <p>	
+						                    <h2>		
+				                                <a class="solo" href="javascript:linkToTools()">
+				                                    <img src="images/info_link.gif" alt="<%= property('TOOLS_ALT_IMG_TEXT') %>" width="25" height="20" border="0">
+				                                    <%= property('TOOLS_LINK_LABEL') %>
+				                                </a> 
+						                    </h2> 
+						                </p>
+								    </div>
+							    </div>								
+					        <% } %>    -->
+							
+							<!-- single product to install -->
+							<div id="prod_client">
+								<div id="product">
+									<h1>
+										<%= top.formatmsg(property('CLIENT_NAME'),'<span class="versionArea">&nbsp;</span>') %>
+									</h1>
+									<h2>
+										<%= top.formatmsg(property('CLIENT_DESCR')) %>
+									</h2>
+									<div class="buttons">
+										<span id="btn_client_new"><input type="button" name="client" value="<%=property('INSTALL_NEW_BUTTON')%>" onClick="javascript:installNew(event)"></span>
+										<span id="btn_client_exist"><input type="button" name="client" value="<%=property('INSTALL_EXISTING_BUTTON')%>" onClick="javascript:installExisting(event)"></span>      
+										<span id="btn_client_error">
+											<table  border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td valign="top" class="error_box">
+														<input type="button" name="client" value="<%=property('INSTALL_EXISTING_BUTTON')%>" class="disabled" disabled="disabled">
+													</td>
+													<td valign="top">
+														<img src="images/install_error.gif" alt="" class="install_error">
+													</td>
+													<td valign="top" class="error_msg">	
+														<strong><%=property('missing_prereqs_msg')%></strong>
+														<br>
+														<%= top.formatmsg(property('missing_prereq_CLIENT'),'<a href="javascript:linkToClient();" class="solo solo_ul">','</a>') %>
+													</td>
+												</tr>
+											</table>
+										</span>
+									</div>
+								</div>
+							</div>							
+							
+
+
+							<!-- single product to install -->
+							<div id="prod_doce">
+								<div id="product">
+									<h1>
+										<%= top.formatmsg(property('DOCE_NAME'),'<span class="versionArea">&nbsp;</span>') %>
+									</h1>
+									<h2>
+										<%= top.formatmsg(property('DOCE_DESCR'),'<br><br>') %>
+									</h2>
+									<div class="buttons">
+										<span id="btn_doce_new"><input type="button" name="doce" value="<%=property('INSTALL_NEW_BUTTON')%>" onClick="javascript:installNew(event)"></span>
+										<span id="btn_doce_exist"><input type="button" name="doce" value="<%=property('INSTALL_EXISTING_BUTTON')%>" onClick="javascript:installExisting(event)"></span>      
+										<span id="btn_doce_error">
+											<table  border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td valign="top" class="error_box">
+														<input type="button" name="client" value="<%=property('INSTALL_EXISTING_BUTTON')%>" class="disabled" disabled="disabled">
+													</td>
+													<td valign="top">
+														<img src="images/install_error.gif" alt="" class="install_error">
+													</td>
+													<td valign="top" class="error_msg">	
+														<strong><%=property('missing_prereqs_msg')%></strong>
+														<br>
+														<%= top.formatmsg(property('missing_prereq_DOCE'),'<a href="javascript:linkToDOCE();" class="solo solo_ul">','</a>') %>
+													</td>
+												</tr>
+											</table>		
+										</span>      
+									</div>
+								</div>
+							</div>
+							
+							<!-- single product to install -->
+							<div id="prod_rcon">
+								<div id="product">
+									<h1>
+										<%= top.formatmsg(property('RCON_NAME'),'<span class="versionArea">&nbsp;</span>') %>										
+									</h1>
+									<h2>
+										<%= top.formatmsg(property('RCON_DESCR')) %>
+									</h2>
+									<div class="buttons">
+										<span id="btn_rcon_new"><input type="button" name="rcon" value="<%=property('INSTALL_NEW_BUTTON')%>" onClick="javascript:installNew(event)"></span>
+										<span id="btn_rcon_exist"><input type="button" name="rcon" value="<%=property('INSTALL_EXISTING_BUTTON')%>" onClick="javascript:installExisting(event)"></span>      
+										<span id="btn_rcon_error">
+											<table  border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td valign="top" class="error_box">
+														<input type="button" name="client" value="<%=property('INSTALL_EXISTING_BUTTON')%>" class="disabled" disabled="disabled">
+													</td>
+													<td valign="top">
+														<img src="images/install_error.gif" alt="" class="install_error">
+													</td>
+													<td valign="top" class="error_msg">	
+														<strong><%=property('missing_prereqs_msg')%></strong>
+														<br>
+														<%= top.formatmsg(property('missing_prereq_RCON'),'<a href="javascript:linkToRCON();" class="solo solo_ul">','</a>') %>
+													</td>
+												</tr>
+											</table>		
+										</span>      
+									</div>
+								</div>
+							</div>
+							
+							<!-- single product to install -->
+							<div id="prod_lsdc">
+								<div id="product">
+									<h1>
+										<%= top.formatmsg(property('LSDC_NAME'),'<span class="versionArea">&nbsp;</span>') %>
+									</h1>
+									<h2>
+										<%= top.formatmsg(property('LSDC_DESCR')) %>
+									</h2>
+									<div class="buttons">
+										<span id="btn_lsdc_new"><input type="button" name="lsdc" value="<%=property('INSTALL_NEW_BUTTON')%>" onClick="javascript:installNew(event)"></span>
+										<span id="btn_lsdc_exist"><input type="button" name="lsdc" value="<%=property('INSTALL_EXISTING_BUTTON')%>" onClick="javascript:installExisting(event)"></span>      
+										<span id="btn_lsdc_error">
+											<table  border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td valign="top" class="error_box">
+														<input type="button" name="client" value="<%=property('INSTALL_EXISTING_BUTTON')%>" class="disabled" disabled="disabled">		
+													</td>
+													<td valign="top">
+														<img src="images/install_error.gif" alt="" class="install_error">
+													</td>
+													<td valign="top" class="error_msg">	
+														<strong><%=property('missing_prereqs_msg')%></strong>
+														<br>
+														<%= top.formatmsg(property('missing_prereq_LSDC'),'<a href="javascript:linkToLSDC();" class="solo solo_ul">','</a>') %>
+													</td>
+												</tr>
+											</table>			
+										</span>      
+									</div>
+								</div>
+							</div>
+
+				<!-- dsac and dsdwb are not real products that we package at this time. -->
+				<!-- once they become real prods, we need to change the following two sections -->
+                            <!-- single product to install -->
+                            <div id="prod_dsac">
+                                <div id="product">
+                                    <h1>
+                                        <!-- *** TRANSLATION: Start *** //-->
+                                        Data server administrator tool
+                                        <!-- *** TRANSLATION: End *** //-->
+                                    </h1>
+                                    <h2>
+                                        <!-- *** TRANSLATION: Start *** //-->
+                                        The data server administrator tool is a Web portal tool that helps database administrators more efficiently and effectively manage any number of DB2 and Informix IDS data servers. The data server administrator tool can help keep database servers operating at the required level of performance by reducing the time required to resolve problems, automating and eliminating routine maintenance and upkeep tasks, and ultimately helping to avoid problems altogether.
+                                        <!-- *** TRANSLATION: End *** //-->
+                                    </h2>
+                                    <div class="buttons">
+                                        <!-- *** TRANSLATION: Translate the value attribute on the following line ***//-->
+                                        <span id="btn_dsac_new"><input type="button" name="dsac" value="Install" onClick="javascript:installNew(event)"></span>
+                                        <span id="btn_dsac_error">      
+                                            <table  border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td valign="top" class="error_box">
+                                                        <input type="button" name="dsac" value="Work with Existing" class="disabled" disabled="disabled">       
+                                                    </td>
+                                                    <td valign="top">
+                                                        <img src="../../images/install_error.gif" alt="" class="install_error">
+                                                    </td>
+                                                    <td valign="top" class="error_msg"> 
+                                                        <strong>Missing Prerequisites:</strong>
+                                                        <br>
+                                                        Install the <a href="javascript:linkToVSAI();" class="solo solo_ul">required DB2 products</a> before installing data server administrator tool.
+                                                    </td>
+                                                </tr>
+                                            </table>    
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- single product to install -->
+                            <div id="prod_dsdwb">
+                                <div id="product">
+                                    <h1>
+                                        <!-- *** TRANSLATION: Start *** //-->
+                                        Data server developer tool
+                                        <!-- *** TRANSLATION: End *** //-->
+                                    </h1>
+                                    <h2>
+                                        <!-- *** TRANSLATION: Start *** //-->
+                                        Data server developer tool is a comprehensive suite of integrated Eclipse tools for the database designer and development DBA. The tool reduces the time to create, deploy, and debug SQL and Java stored procedures, deploy data-centric web services, and create queries for relational and XML data using SQL and XQuery for DB2 and Informix IDS data servers.
+                                        <!-- *** TRANSLATION: End *** //-->
+                                    </h2>
+                                    <div class="buttons">
+                                        <!-- *** TRANSLATION: Translate the value attribute on the following line ***//-->
+                                        <span id="btn_dsdwb_new"><input type="button" name="dsdwb" value="Install" onClick="javascript:installNew(event)"></span>
+                                        <span id="btn_dsdwb_error">     
+                                            <table  border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td valign="top" class="error_box">
+                                                        <input type="button" name="dsdwb" value="Work with Existing" class="disabled" disabled="disabled">      
+                                                    </td>
+                                                    <td valign="top">
+                                                        <img src="../../images/install_error.gif" alt="" class="install_error">
+                                                    </td>
+                                                    <td valign="top" class="error_msg"> 
+                                                        <strong>Missing Prerequisites:</strong>
+                                                        <br>
+                                                        Install the <a href="javascript:linkToVSAI();" class="solo solo_ul">required DB2 products</a> before installing data server developer tool.
+                                                    </td>
+                                                </tr>
+                                            </table>    
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            														
+							<!-- single product to install -->
+							<div id="prod_vsai">
+								<div id="product">
+									<h1>
+									        <%= top.formatmsg(property('VSAI_NAME'),'<span class="versionArea">&nbsp;</span>') %>	
+									</h1>
+									<h2>
+										<%= property('VSAI_DESCR') %>
+									</h2>
+									<div class="buttons">
+										<span id="btn_vsai_new"><input type="button" name="vsai" value="<%=property('INSTALL_EXTERNAL_BUTTON')%>" onClick="javascript:installNew(event)"></span>
+										<span id="btn_vsai_error">		
+											<table  border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td valign="top" class="error_box">
+													  <input type="button" name="client" value="<%=property('INSTALL_EXISTING_BUTTON')%>" class="disabled" disabled="disabled">    
+													</td>
+													<td valign="top">
+														<img src="images/install_error.gif" alt="" class="install_error">
+													</td>
+													<td valign="top" class="error_msg">	
+														<strong><%=property('missing_prereqs_msg')%></strong>
+														<br>
+														<%= top.formatmsg(property('missing_prereq_VSAI'),'<a href="javascript:linkToVSAI();" class="solo solo_ul">','</a>') %>
+													</td>
+												</tr>
+											</table>	
+										</span>
+									</div>
+								</div>
+							</div>							
+                                                        <!-- single product to install -->
+							<div id="prod_consv">
+								<div id="product">
+									<h1>
+										<%= top.formatmsg(property('CONSV_NAME'),'<span class="versionArea">&nbsp;</span>') %>
+									</h1>
+									<h2>
+										<%= top.formatmsg(property('CONSV_DESCR')) %>
+									</h2>
+									<div class="buttons">
+										<span id="btn_consv_new"><input type="button" name="consv" value="<%=property('INSTALL_NEW_BUTTON')%>" onClick="javascript:installNew(event)"></span>
+										<span id="btn_consv_exist"><input type="button" name="consv" value="<%=property('INSTALL_EXISTING_BUTTON')%>" onClick="javascript:installExisting(event)"></span>      
+										<span id="btn_consv_error">
+											<table  border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td valign="top" class="error_box">
+														<input type="button" name="client" value="<%=property('INSTALL_EXISTING_BUTTON')%>" class="disabled" disabled="disabled">								
+													</td>
+													<td valign="top">
+														<img src="images/install_error.gif" alt="" class="install_error">
+													</td>
+													<td valign="top" class="error_msg">	
+														<strong><%=property('missing_prereqs_msg')%></strong>
+														<br>
+														<%= top.formatmsg(property('missing_prereq_CONSV'),'<a href="javascript:linkToConSV();" class="solo solo_ul">','</a>') %>
+													</td>
+												</tr>
+											</table>		
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Product List Ends Here -->
+										
+				</p>
+			</div>
+		</td>
+	</tr>
+</table>
+</script>
+<!-- END OF MASTER TABLE -->
+<!-- import javascripts -->
+<script type="text/javascript" language="JavaScript">
+	displayinstalled();
+	displayLPVersion();
+</script>
+</body>
+</html>

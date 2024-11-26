@@ -1,0 +1,458 @@
+/* Table specific definition above body text to avoid inheritance issues */
+td.search_text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #5A595A;	
+}
+td.linkcolor {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #595959;	
+}
+td.imageInText_placement {
+	vertical-align: top;
+}
+
+body, td.tableText {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	background-color: #FFFFFF;
+}
+.title_text {
+	position:absolute;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color:#000000;
+	font-weight: bold;
+	top:0px;
+	left:227px;
+}
+.title_subtext {
+	position:absolute;
+	font-family:  Arial, Helvetica, sans-serif;
+	color:#000000;
+	font-size: 9px;
+	vertical-align: top;
+	top:15px;
+	left:227px;
+}
+
+.content {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	padding-top: 10px;
+	padding-left: 25px;
+}
+
+.content_width {
+	width: 100%;
+}
+
+/* Banner definitions */
+.bannerBG {
+background-image: url(images/FS_ban_tile.gif);
+}
+
+.searchbarBG {
+background-image: url(images/FS_ban_search_BG.gif);
+}
+
+.searchform { 
+ font-size: 12px;
+ background-color: #FFFFFF; 
+ border: 1px solid #828282;
+ height: 19px;
+}
+
+/* List, Paragraph and content area definitions  */
+ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+li, ol {
+	margin-bottom: 5px;
+}
+
+p {
+	display: block;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 16px;
+	margin-left: 0px;
+}
+
+p.small {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+/* Headings Definitions */
+span.head1black {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	font-style: normal;
+	font-weight: bolder;
+	color: #000000;
+}
+
+.head1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	font-style: normal;
+	font-weight: bolder;
+	color: #345B98;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#ADADAD;
+}
+
+.head2green {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #2F751E;
+}
+
+.head2black {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #494949;
+	text-align: left;
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-bottom-color: #ADADAD;
+	width: 100%;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/* Left navigation definitions */
+.navigation	{
+	position:absolute;
+	top:40px;
+	left:0px;
+	padding:0px;
+	margin:0px;
+	width:200px;
+}
+
+.container {
+	background-color: #e0dee3;
+	padding-top: 2px;
+	padding-right: 0px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+	margin-top: 18px;
+}
+
+.left-nav	{
+	border-bottom:1px solid #A8A8AD;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 6px;
+	} 
+	
+/* Link Definitions */
+.left-nav a	{
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #526652;
+	} 
+.left-nav a:hover {background:#eee;} 
+.left-nav a.active:hover {text-decoration:none; background:#FFFFFF;} 
+
+.top-level a  {
+	display:block;
+	background:#e0dee3;
+	padding:5px 0 5px 0;
+	border-top:1px solid #A8A8AD;
+	font-weight: bold;
+}
+
+.second-level a	{
+	display:block;
+	background:#c4d3c4;
+	padding:5px 0 5px 0; 
+	border-top:1px solid #FFFFFF;
+	font-weight: normal;
+	text-transform: none;
+} 
+
+.top-level a	{
+padding-left:4px;
+padding-right:4px;
+}
+
+.second-level a	{
+padding-left:12px;
+padding-right:4px;
+} 
+
+a.active	{background:#FFFFFF;}
+a.top-active	{background:#c4d3c4;}
+
+.solo:link {
+	font-weight: 300;
+	color: #073B8E;
+	text-decoration: none;
+}
+.solo:visited {
+	font-weight: 300;
+	color: #073B8E;
+	text-decoration: none;
+}
+.solo:hover {
+	font-weight: 300;
+	color: #073B8E;
+	text-decoration: underline;
+}
+.solo_ul:link {
+	text-decoration: underline;
+}
+.solo_ul:visited {
+	text-decoration: underline;
+}
+
+/* Button style Definitions  */
+.button-blue input	{
+	color: #5A595A;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align:center;
+	border: 1px solid #313063;
+	padding: 0px 1px 0px 2px;
+	background:#84AEDE url(images/LP_butt_tile.gif);
+	height: 19px;	
+}
+
+.searchform {
+    background:#ffffff;
+}
+
+input {
+	color: #5A595A;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align:center;
+	border: 1px solid #313063;	
+	background:#84AEDE url(images/LP_butt_tile.gif); /** this is the tile image used to make the buttons show a blue gradient **/
+	height: 19px;
+	padding: 0px 15px 0px 15px;
+}
+
+/* Added for 101306. */
+a.install_tab {
+	color:#182F17;
+}
+img.install_arrow {
+	border:0px;
+}
+img.install_error {
+	border:0px;
+	position:relative;
+	top:5px;
+}
+input.disabled {
+	color:#AAAAAA;
+}
+td.error_msg {	
+	padding-left:6px;
+	padding-top:3px;
+	font-size:12px;
+}
+td.error_box {
+	padding-right:5px;
+	padding-top:6px;
+	width:0*;
+}
+
+/* Added by Amber for Launchpad */
+.copyright {
+	font-size: 7pt;
+}
+.copyright1 {
+	font-size: 10pt;
+}
+
+.special {
+	color: #FF0000;
+}
+
+.buttons {
+    padding-left: 10px;
+	padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	background-color: #FFFFFF; /* this is the white background *behind* the buttons */
+}
+#product {	
+	width: 100%;
+}
+
+#product h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#product h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+/*  All the Install Elements - by default, hidden */
+#prod_aese       {  display: none;  }
+#btn_aese_new    {  display: none;  }
+#btn_aese_exist  {  display: none;  }
+#btn_aese_migr   {  display: none;  }
+#btn_aese_error   {  display: none;  }
+
+#prod_ese       {  display: none;  }
+#btn_ese_new    {  display: none;  }
+#btn_ese_exist  {  display: none;  }
+#btn_ese_migr   {  display: none;  }
+#btn_ese_error   {  display: none;  }
+
+#prod_wse      {  display: none;  }
+#btn_wse_new   {  display: none;  }
+#btn_wse_exist {  display: none;  }
+#btn_wse_migr  {  display: none;  }
+#btn_wse_error  {  display: none;  }
+
+#prod_exp       {  display: none;  }
+#btn_exp_new    {  display: none;  }
+#btn_exp_exist  {  display: none;  }
+#btn_exp_migr   {  display: none;  }
+#btn_exp_error   {  display: none;  }
+
+#prod_expc       {  display: none;  }
+#btn_expc_new    {  display: none;  }
+#btn_expc_exist  {  display: none;  }
+#btn_expc_migr   {  display: none;  }
+#btn_expc_error   {  display: none;  }
+
+#prod_pe        {  display: none;  }
+#btn_pe_new     {  display: none;  }
+#btn_pe_exist   {  display: none;  }
+#btn_pe_migr    {  display: none;  }
+#btn_pe_error    {  display: none;  }
+
+#prod_rtcl      {  display: none;  }
+#btn_rtcl_new   {  display: none;  }
+#btn_rtcl_exist {  display: none;  }
+#btn_rtcl_migr  {  display: none;  }
+#btn_rtcl_error  {  display: none;  }
+
+#prod_client       {  display: none;  }
+#btn_client_new    {  display: none;  }
+#btn_client_exist  {  display: none;  }
+#btn_client_migr   {  display: none;  }
+#btn_client_error   {  display: none;  }
+
+#prod_admcl       {  display: none;  }
+#btn_admcl_new    {  display: none;  }
+#btn_admcl_exist  {  display: none;  }
+#btn_admcl_migr   {  display: none;  }
+#btn_admcl_error   {  display: none;  }
+
+#prod_consv       {  display: none;  }
+#btn_consv_new    {  display: none;  }
+#btn_consv_exist  {  display: none;  }
+#btn_consv_migr   {  display: none;  }
+#btn_consv_error   {  display: none;  }
+
+#prod_conpe       {  display: none;  }
+#btn_conpe_new    {  display: none;  }
+#btn_conpe_exist  {  display: none;  }
+#btn_conpe_migr   {  display: none;  }
+#btn_conpe_error   {  display: none;  }
+
+#prod_doce       {  display: none;  }
+#btn_doce_new    {  display: none;  }
+#btn_doce_exist  {  display: none;  }
+#btn_doce_migr   {  display: none;  }
+#btn_doce_error   {  display: none;  }
+
+#prod_gse       {  display: none;  }
+#btn_gse_new    {  display: none;  }
+#btn_gse_exist  {  display: none;  }
+#btn_gse_migr   {  display: none;  }
+#btn_gse_error   {  display: none;  }
+
+#prod_rcon       {  display: none;  }
+#btn_rcon_new    {  display: none;  }
+#btn_rcon_exist  {  display: none;  }
+#btn_rcon_migr   {  display: none;  }
+#btn_rcon_error   {  display: none;  }
+
+#prod_lsdc       {  display: none;  }
+#btn_lsdc_new    {  display: none;  }
+#btn_lsdc_exist  {  display: none;  }
+#btn_lsdc_migr   {  display: none;  }
+#btn_lsdc_error   {  display: none;  }
+
+#prod_qp        {  display: none;  }
+#btn_qp_new    {  display: none;  }
+#btn_qp_exist  {  display: none;  }
+#btn_qp_migr   {  display: none;  }
+#btn_qp_error   {  display: none;  }
+
+#prod_cube       {  display: none;  }
+#btn_cube_new    {  display: none;  }
+#btn_cube_exist  {  display: none;  }
+#btn_cube_migr   {  display: none;  }
+#btn_cube_error   {  display: none;  }
+
+#prod_nlpack        {  display: none;  }
+#btn_nlpack_new     {  display: none;  }
+#btn_nlpack_exist   {  display: none;  }
+#btn_nlpack_migr    {  display: none;  }
+#btn_nlpack_error    {  display: none;  }
+
+#prod_vsai       {  display: none;  }
+#btn_vsai_new    {  display: none;  }
+#btn_vsai_error    {  display: none;  }
+
+#prod_dsdwb       {  display: none;  }
+#btn_dsdwb_new    {  display: none;  }
+#btn_dsdwb_error    {  display: none;  }
+
+#prod_dsac       {  display: none;  }
+#btn_dsac_new    {  display: none;  }
+#btn_dsac_error    {  display: none;  }
+
+/* The controls below is to hide migration related info for DOCE */
+#migrate_info_tab     {  display: block;  }
+
+/* The controls below is for the Welcome strings */
+#welcomeDB2             {  display: none;  }
+#welcomeIBMDataServer   {  display: none;  }
+
+/* for Data studio components */
+#dshm                   { display: none;   }
+#button_DSFC           { display: none;   }
+#button_DSHM           { display: none;   }  
+#link_DSFC           { display: none;   }

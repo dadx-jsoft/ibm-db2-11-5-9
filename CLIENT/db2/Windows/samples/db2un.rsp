@@ -1,0 +1,229 @@
+** ============================================================================
+**
+** Sample response file for db2 uninstall
+** ----------------------------------
+**
+** To select features to uninstall, uncomment the corresponding keywords.
+** Comments are made by placing either an asterisk (*) or a number sign (#) at
+** the start of a line, or by placing ** or ## after the start of a line to
+** comment out the rest of that line.
+**
+** Refer to the DB2 Information Center at:
+** https://www-01.ibm.com/support/knowledgecenter/SSEPGG_11.5.9000/com.ibm.db2.luw.kc.doc/welcome.html.
+**
+** ============================================================================
+
+*KILL_PROCESSES           = NO
+    
+** Select product(s) to uninstall
+** ------------------------------
+*REMOVE_PROD              = ALL                                 ** Warning: All DB2 products in the current DB2 copy will be removed. The DB2 products in other copies are not affected
+*REMOVE_PROD              = CLIENT
+*REMOVE_PROD              = CONNECT_SERVER
+*REMOVE_PROD              = DB2_SERVER_EDITION
+*REMOVE_PROD              = EXPRESS_C
+*REMOVE_PROD              = EXPRESS_EDITION
+*REMOVE_PROD              = II_NONRELATIONAL_WRAPPERS
+*REMOVE_PROD              = II_RELATIONAL_WRAPPERS
+
+** Select component(s) to uninstall
+** --------------------------------
+
+** The Base Application Development Tools component contains tools and files
+** (including header files, libraries, and a precompiler) that are needed for
+** developing applications that work with DB2.
+*REMOVE_COMP              = APPLICATION_DEVELOPMENT_TOOLS       ** Base Application Development Tools
+
+** Connect Support provides the ability to connect to host, AS/400, and iSeries
+** systems.
+*REMOVE_COMP              = CONNECT_SUPPORT                     ** Connect Support
+
+** This component allows support for new data sources to be added to your
+** installation through product fix packs and point releases.
+*REMOVE_COMP              = CUSTOM_DATA_SOURCE_SUPPORT          ** Custom data source support
+
+** This component contains source code to create DB2 sample databases.
+*REMOVE_COMP              = DB2_SAMPLE_DATABASE                 ** Sample Database
+
+** DB2 Update Service is a Web tool that lists the available DB2 product
+** updates, and provides details about product updates. The DB2 Update Service
+** requires an Internet connection.
+*REMOVE_COMP              = DB2_UPDATE_SERVICE                  ** DB2 Update Service
+
+** Program Database for storing debugging information about the DB2
+** dynamic-link library.
+*REMOVE_COMP              = DEBUGGING_SYMBOLS                   ** DEBUGGING_SYMBOLS
+
+** The IBM Data Server Provider for .NET is an extension of the ADO.NET
+** interface. With the IBM Data Server Provider for .NET, your .NET
+** applications can quickly and securely access data from DB2 and IDS
+** databases.
+*REMOVE_COMP              = DOTNET_DATA_PROVIDER                ** IBM Data Server Provider for .NET
+
+** Enables users and applications to submit distributed requests for data
+** managed by Oracle systems.
+*REMOVE_COMP              = FED_DATA_SOURCE_SUPPORT             ** Federated Data Access Support
+
+** First Steps is a graphical tool that will help familiarize you with DB2
+** features and functions.
+*REMOVE_COMP              = FIRST_STEPS                         ** First Steps
+
+** Guardium Installation Manager Client component will place the Guardium
+** Installation Manager(GIM) Client under DB2 Install Path.
+*REMOVE_COMP              = GUARDIUM_INST_MNGR_CLIENT           ** Guardium Installation Manager Client
+
+** Application data sources use an application to access the underlying
+** nonrelational data.	The raw data can be in a number of standard and
+** nonstandard formats.
+*REMOVE_COMP              = IINR_APPLICATIONS_WRAPPER           ** Application Data Sources
+
+** Scientific data sources are developed exclusively for the life sciences
+** industry, such as those containing genomic, proteomic, bioinformatic, and
+** cheminformatic information.
+*REMOVE_COMP              = IINR_SCIENTIFIC_WRAPPER             ** Scientific Data Sources
+
+** Structured file data sources contain nonrelational data stored in files with
+** a defined, repeatable structure.
+*REMOVE_COMP              = IINR_STRUCTURED_FILES_WRAPPER       ** Structured File Data Sources
+
+** Enables users and applications to submit distributed requests for data
+** managed by Informix systems.
+*REMOVE_COMP              = INFORMIX_DATA_SOURCE_SUPPORT        ** Informix data source support
+
+** Sub-set of the Java Development Kit for DB2 developers wishing to
+** redistribute the Java Runtime Environment (JRE)
+*REMOVE_COMP              = JAVA_RUNTIME_SUPPORT                ** Java Runtime Support
+
+** Enables users and applications to submit distributed requests through JDBC
+** for data managed by DBMS.
+*REMOVE_COMP              = JDBC_DATA_SOURCE_SUPPORT            ** JDBC data source support
+
+** JDBC Support allows Java samples, not containing embedded SQL (SQLJ), to be
+** built and run using the JDBC driver.
+*REMOVE_COMP              = JDBC_SUPPORT                        ** JDBC Support
+
+** The IBM Software Development Kit (SDK) for Java(TM) provides the support
+** required to use Java-based tools, and to create and run Java applications,
+** including stored procedures and user-defined functions.
+*REMOVE_COMP              = JDK                                 ** IBM Software Development Kit (SDK) for Java(TM)
+
+** LDAP Exploitation allows DB2 to use an LDAP directory to store database
+** directory and configuration information.
+*REMOVE_COMP              = LDAP_EXPLOITATION                   ** LDAP Exploitation
+
+** Enables users and applications to submit distributed requests for data
+** stored in any data source that supports ODBC and X/Open CLI compliant
+** drivers.
+*REMOVE_COMP              = ODBC_DATA_SOURCE_SUPPORT            ** ODBC data source support
+
+** ODBC Support provides support for applications that use Open Database
+** Connectivity (ODBC) to access data.
+*REMOVE_COMP              = ODBC_SUPPORT                        ** ODBC Support
+
+** OLE DB Support provides a set of interfaces that allow applications to
+** uniformly access data stored in different data sources.
+*REMOVE_COMP              = OLE_DB_SUPPORT                      ** OLE DB Support
+
+** Enables users and applications to submit distributed requests for data
+** managed by Oracle systems.
+*REMOVE_COMP              = ORACLE_DATA_SOURCE_SUPPORT          ** Oracle data source support
+
+** The Replication Tools help you administer, operate, and monitor SQL and Q
+** replication.
+*REMOVE_COMP              = REPL_CLIENT                         ** Replication Tools
+
+** Spatial Extender Client provides the support required for communicating with
+** a Spatial Extender Server.
+*REMOVE_COMP              = SPATIAL_EXTENDER_CLIENT_SUPPORT     ** Spatial Extender Client
+
+** Provides Spatial Extender support for the DB2 server, providing the storing
+** and query of geographical information in DB2 tables.
+*REMOVE_COMP              = SPATIAL_EXTENDER_SERVER_SUPPORT     ** Spatial Extender Server Support
+
+** SQLJ Support allows you to run Java(TM) samples that contain embedded SQL
+** (SQLJ) using the JDBC driver.
+*REMOVE_COMP              = SQLJ_SUPPORT                        ** SQLJ Support
+
+** Enables users and applications to submit distributed requests for data
+** managed by Microsoft SQL Server systems.
+*REMOVE_COMP              = SQL_SERVER_DATA_SOURCE_SUPPORT      ** SQL Server data source support
+
+** Enables users and applications to submit distributed requests for data
+** managed by Sybase systems.
+*REMOVE_COMP              = SYBASE_DATA_SOURCE_SUPPORT          ** Sybase data source support
+
+** Enables users and applications to submit distributed requests for data
+** managed by Teradata systems.
+*REMOVE_COMP              = TERADATA_DATA_SOURCE_SUPPORT        ** Teradata data source support
+
+** The DB2 Text Search component, powered by OmniFind, delivers an integrated,
+** high quality and scalable search technology in DB2 databases.
+*REMOVE_COMP              = TEXT_SEARCH                         ** DB2 Text Search
+
+** The Thin Client Code Server component provides functionality required to set
+** up a DB2 Thin Client environment.
+*REMOVE_COMP              = THIN_CLIENT_CODE_SERVER             ** Thin Client Code Server
+
+** The DB2(R) WMI provider allows WMI applications to monitor DB2 server
+** services, enumerate and create databases, configure operational settings and
+** perform database backup, restore, and roll-forward operations.
+*REMOVE_COMP              = WMI_PROVIDER                        ** DB2 WMI Provider
+
+
+** Select language(s) to uninstall
+** -------------------------------
+*REMOVE_LANG              = ALL             ** All non-English languages in the current copy will be removed.
+*REMOVE_LANG              = AR              ** Arabic (ar_AA)
+*REMOVE_LANG              = BG              ** Bulgarian (bg_BG)
+*REMOVE_LANG              = BR              ** Portuguese - Brazil (pt_BR)
+*REMOVE_LANG              = CN              ** Simplified Chinese (zh_CN)
+*REMOVE_LANG              = CZ              ** Czech (cs_CZ)
+*REMOVE_LANG              = DE              ** German (de_DE)
+*REMOVE_LANG              = DK              ** Danish (da_DK)
+*REMOVE_LANG              = EL              ** Greek (el_GR)
+*REMOVE_LANG              = ES              ** Spanish (es_ES)
+*REMOVE_LANG              = FI              ** Finnish (fi_FI)
+*REMOVE_LANG              = FR              ** French (fr_FR)
+*REMOVE_LANG              = HR              ** Croatian (hr_HR)
+*REMOVE_LANG              = HU              ** Hungarian (hu_HU)
+*REMOVE_LANG              = IT              ** Italian (it_IT)
+*REMOVE_LANG              = IW              ** Hebrew (iw_IL)
+*REMOVE_LANG              = JP              ** Japanese (ja_JP)
+*REMOVE_LANG              = KR              ** Korean (ko_KR)
+*REMOVE_LANG              = NL              ** Dutch (nl_NL)
+*REMOVE_LANG              = NO              ** Norwegian (no_NO)
+*REMOVE_LANG              = PL              ** Polish (pl_PL)
+*REMOVE_LANG              = PT              ** Portuguese - Portugal (pt_PT)
+*REMOVE_LANG              = RO              ** Romanian (ro_RO)
+*REMOVE_LANG              = RU              ** Russian (ru_RU)
+*REMOVE_LANG              = SE              ** Swedish (sv_SE)
+*REMOVE_LANG              = SK              ** Slovakian (sk_SK)
+*REMOVE_LANG              = SL              ** Slovenian (sl_SI)
+*REMOVE_LANG              = TR              ** Turkish (tr_TR)
+*REMOVE_LANG              = TW              ** Traditional Chinese (zh_TW)
+
+
+** Start-up Options
+** ----------------
+*REBOOT                   = NO              ** YES or NO. Default is NO.
+
+
+** Administration Server:  The keyword for removing DAS. Its default value is
+** NO. This REMOVE_DAS keyword will only be examined when all the following is
+** true: a) there is more than one db2 copy on the system; b) all server
+** products in the current copy will be removed; c) the DAS is configured and
+** active under the DB2 copy being uninstalled.  When the conditions specified
+** above are met, 1) if this keyword is set to NO, the uninstallation stops; 2)
+** if it is set to YES, the DAS will be removed during the uninstallation.   
+** For more information, see the topic "Response File Keywords" in the DB2
+** Information Center.
+** ----------------------------------------------------------------------------
+*REMOVE_DAS               = NO              ** YES or NO. Default is NO.
+
+
+** Remove the users and groups created by the DB2 installer for this DB2 copy.
+** The keyword REMOVE_INSTALL_CREATED_USERS_GROUPS will only be examined when
+** removing the final product or all products within the DB2 copy.
+** ---------------------------------------------------------------------------
+*REMOVE_INSTALL_CREATED_USERS_GROUPS = NO   ** YES or NO. Default is NO.
+

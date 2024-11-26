@@ -1,0 +1,27 @@
+# This file is for the language: en_US
+NLPACK0=IBM DB2 National Language Package
+NLPACK2=DB2 National Language Package
+NLPACK_G=DB2 National Language Package versione {0}
+NLPACK3=DB2 National Language Package aggiunge il supporto per le lingue ai prodotti DB2. Tale supporto può essere aggiunto in qualsiasi momento per utilizzare i prodotti DB2 in altre lingue.
+NLPACK4=DB2 National Language Package aggiunge il supporto per le lingue ai prodotti DB2. Tale supporto può essere aggiunto in qualsiasi momento per utilizzare i prodotti DB2 in altre lingue.
+DB2_SETUP=Installazione DB2
+LANGUAGE=lingua
+RESPONSE_FILE=file di risposte
+LOG_FILE=file di log
+TRACE_FILE=file di traccia
+PATH_NAME=percorso di installazione
+HELP_OPTION=genera questo messaggio.
+HELP_OPTION=genera questo messaggio.
+C_OPTION=l'installazione di DB2 termina immediatamente, non resta in attesa dei processi secondari.
+F_OPTION=forza l'arresto dei processi db2 prima dell'installazione.
+I_OPTION=codice a due lettere per la lingua prescelta.
+L_OPTION=nome e percorso completo del file di log.
+M_OPTION=visualizza una barra di avanzamento quando si esegue un'installazione non presidiata. Su sistemi Windows 7, potrebbero essere visualizzati dei prompt.
+P_OPTION=percorso completo della directory di installazione.
+U_OPTION=nome e percorso completo del file di risposte.
+TRACE_OPTION=crea un file contenente informazioni di installazione.
+ERROR_REQUESTED_LANGUAGE=La lingua richiesta, '%s', non è inclusa in questa immagine del programma di installazione DB2.
+ERROR_RSP_FILE_INVALID=ERRORE: si è verificato un problema con il file delle risposte '%s'. Il file non esiste.
+ERROR_RSP_KW_INVALID=ERRORE: si è verificato un problema con il file di risposte '%s'. La parola chiave '%s' non è valida nel file di risposte.
+IMSG_PICKER_PATH_NAME=  Percorso di installazione DB2:
+IMSG_CLIPICKER_PATH_NAME=  Percorso di installazione:

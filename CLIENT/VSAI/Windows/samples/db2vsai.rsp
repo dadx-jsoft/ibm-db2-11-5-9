@@ -1,0 +1,21 @@
+* Sample response file for IBM Database Add-Ins for Visual Studio
+* -------------------------------------------------------------------------
+
+*To select features and settings to install, uncomment the corresponding keywords
+*and specify values for those keywords. You do not need to select features for the
+*TYPICAL or COMPACT installation options.
+
+*Comments are made by placing either an asterisk (*) or a number sign (#) at the start of a line, or by
+*placing ** or ## after the start of a line to comment out the rest of that line.
+
+*All keywords that are currently uncommented (i.e. not preceded by *) are mandatory and must be 
+*specified in order for the installation to continue. All other keywords are optional. If optional keywords are
+*not specified, the installation will proceed using default values.
+
+*============================================================================
+
+* General Options
+* ---------------
+PROD                 = VISUAL_STUDIO_ADD_INS
+LIC_AGREEMENT        = DECLINE   **You must change this to ACCEPT to indicate your acceptance of the license agreement before continuing.
+*FILE                = C:\Program Files\IBM\IBM Database Add-Ins for Visual Studio

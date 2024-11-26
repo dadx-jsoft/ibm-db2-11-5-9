@@ -1,0 +1,3 @@
+An error occurred while starting the launchpad.  This error typically occurs when the launchpad
+is unable to find a supported Java Runtime Environment.
+

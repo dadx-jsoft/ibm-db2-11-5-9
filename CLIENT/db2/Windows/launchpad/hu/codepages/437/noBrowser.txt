@@ -1,0 +1,4 @@
+Hiba történt a DB2 Setup Launchpad indítása során.  Ez a hiba tipikusan akkor lép fel, ha a DB2 Setup Launchpad
+nem talál támogatott böngészõt (Firefox 2.0+, Mozilla 1.7+, Internet Explorer 6.0+, SeaMonkey 1.1.4+). 
+
+A támogatott böngészõk aktuális listáját keresse a DB2 információs központban (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1).

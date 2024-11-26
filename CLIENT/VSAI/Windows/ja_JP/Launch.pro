@@ -1,0 +1,27 @@
+# This file is for the language: en_US
+NLPACK0=IBM DB2 National Language Package
+NLPACK2=DB2 National Language Package
+NLPACK_G=DB2 National Language Package バージョン {0}
+NLPACK3=DB2 National Language Package は、DB2 製品に各国語サポートを追加します。 各国語サポートは、DB2 製品をローカライズするためにいつでも追加できます。
+NLPACK4=DB2 National Language Package は、DB2 製品に各国語サポートを追加します。 各国語サポートは、DB2 製品をローカライズするためにいつでも追加できます。
+DB2_SETUP=DB2 セットアップ
+LANGUAGE=言語
+RESPONSE_FILE=応答ファイル
+LOG_FILE=ログ・ファイル
+TRACE_FILE=トレース・ファイル
+PATH_NAME=インストール・パス
+HELP_OPTION=使用法についてのメッセージを生成します。
+HELP_OPTION=使用法についてのメッセージを生成します。
+C_OPTION=DB2 セットアップは子プロセスを待機することなく、即時に戻ります。
+F_OPTION=インストール前に DB2 プロセスを強制的に停止します。
+I_OPTION=優先する言語を表す 2 文字コード。
+L_OPTION=ログ・ファイルの絶対パスと名前。
+M_OPTION=サイレント・インストールの実行時に進行状況表示バーが表示されます。 Windows 7 システムでは、いくつかのプロンプトが表示される場合があります。
+P_OPTION=インストール・ディレクトリーの絶対パス名。
+U_OPTION=応答ファイルの絶対パスと名前。
+TRACE_OPTION=インストール・トレース情報付きでファイルを作成します。
+ERROR_REQUESTED_LANGUAGE=要求言語 '%s' は、この DB2 インストール・イメージには含まれていません。
+ERROR_RSP_FILE_INVALID=ERROR: 応答ファイル '%s' に問題が発生しました。 ファイルが存在しません。
+ERROR_RSP_KW_INVALID=ERROR: 応答ファイル '%s' に問題が発生しました。 応答ファイルでキーワード '%s' は無効です。
+IMSG_PICKER_PATH_NAME=  DB2 インストール・パス:
+IMSG_CLIPICKER_PATH_NAME=  インストール・パス:

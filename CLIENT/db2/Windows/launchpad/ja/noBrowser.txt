@@ -1,0 +1,4 @@
+DB2 セットアップ・ランチパッドの開始中にエラーが起きました。このエラーは通常、サポートされているブラウザー (Firefox 2.0 以上、Mozilla 1.7 以上、Internet Explorer 6.0 以上、SeaMonkey 1.1.4 以上) を DB2 セットアップ・ランチパッドが見つけられないときに起こります。
+
+
+DB2 インフォメーション・センター (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1) で、サポートされているブラウザーの最新リストを確認してください。

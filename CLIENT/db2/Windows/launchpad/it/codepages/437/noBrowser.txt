@@ -1,0 +1,3 @@
+Si è verificato un errore durante l'avvio del launchpad di installazione di DB2.  Questo errore di solito si verifica quando il launchpad di installazione di DB2 non trova un browser supportato (Firefox 2.0+, Mozilla 1.7+, Internet Explorer 6.0+, SeaMonkey 1.1.4+). 
+
+Fare riferimento al Centro informazioni DB2 (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1) per un elenco aggiornato di browser supportati.

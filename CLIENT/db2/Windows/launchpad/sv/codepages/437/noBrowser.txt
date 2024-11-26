@@ -1,0 +1,4 @@
+Ett fel inträffade vid start av startguiden för DB2. Det här felet inträffar oftast när startguiden för DB2 inte kan hitta en webbläsare som hanteras
+(Firefox 2.0+, Mozilla 1.7+, Internet Explorer 6.0+, SeaMonkey 1.1.4+). 
+
+Kontrollera i DB2 Informationscenter (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1) om det finns en aktuell lista över hanterade webbläsare.

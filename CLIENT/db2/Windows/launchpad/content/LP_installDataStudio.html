@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="stylesheet" type="text/css" media="all" href="LP_nav.css">
+<link rel="stylesheet" type="text/css" media="all" href="LP_lang.css">
+<script type="text/javascript" LANGUAGE="JavaScript" src="LP_nav.js"></script>
+<script type="text/javascript" LANGUAGE="JavaScript" src="LP_installDataStudio.js"></script>
+</head>
+
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+<!-- MASTER TABLE -->
+<script src="../jscp.js">
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+
+	<tr valign="top">		
+		<td class="content">  
+			<!-- CONTENT FRAME -->
+			<div class="content_width">
+				<p>
+					<span class="head1">
+						<%= property('INSTALLDS_TITLE') %>
+					</span> 				
+				</p>
+				<p>
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr> 
+							<td class="imageInText_placement">
+								<img src="images/LP_install_DS.gif" width="65" height="58" border="0">
+							</td>
+							<td class="tableText">
+								<%= property('INSTALLDS_DESC1') %><br><br>
+								<%= property('INSTALLDS_DESC2') %>
+							</td>
+						</tr>
+						
+					</table>
+					<p> 
+                         <a class="solo" href="javascript:linkToIBMDSInfo()">
+				              <img src="images/info_link.gif" alt="<%= property('TOOLS_ALT_IMG_TEXT') %>" width="25" height="20" border="0">
+				              <%= property('TOOLS_LINK_LABEL_NEW') %>
+				         </a> 
+				    </p>  
+					<!-- Product List Ends Here-->
+					<p>						
+						<div id="allproducts">
+							<!-- single product to install -->                            
+                            
+                            <div id="DSFC">
+                                <div id="product">
+                                    <h1>										
+										<%= top.formatmsg(property('DSFC_NAME'),'<span class="versionArea">&nbsp;</span>','<span class="fixpackArea">&nbsp;</span>') %>										
+									</h1>
+									<h2>
+										<%= top.formatmsg(property('DSFC_DESCR1'))%><br><br>
+									    <%= top.formatmsg(property('DSFC_DESCR2'))%><br><br>
+									    <%= top.formatmsg(property('DSFC_DESCR3'))%><br><br>
+									    <%= top.formatmsg(property('DSFC_DESCR4'))%> <br><br>
+									    <%= top.formatmsg(property('DSFC_DESCR5'))%> 
+									</h2>                                    
+                                    <div class="buttons">
+                                    <img style="display: none; visibility: hidden;" src="http://www-01.ibm.com/support/knowledgecenter/js/dojo/resources/blank.gif"
+			onError="no_access();" onLoad="with_access();" >
+									<div id = "internet_noAccess">
+                                       	<button type="button" disabled = "disabled" name="dsfc"> <%= property('INSTALL_EXTERNAL_BUTTON') %> </button >
+                                    	<%= top.formatmsg(property('NO_INTERNET_CONN'))%>
+                                     </div>
+                                     
+                                     <div id = "check_internet_Access">
+                                    	<div id="button_DSFC">
+                                           <!-- *** TRANSLATION: Translate the value attribute on the following line ***//-->
+                                           <input type="button" name="dsfc" value="<%= property('INSTALL_EXTERNAL_BUTTON') %>" onClick="javascript:install(event)">
+                                        </div>
+                                        <div id="link_DSFC">
+                                        <p> 
+                                           <a class="solo" href="javascript:linkToDownloadIBMDS()">
+				                                    <img src="images/srch_dnld.gif" alt="<%= property('TOOLS_ALT_IMG_TEXT') %>" width="25" height="20" border="0">
+				                                    <%= property('LINK_DOWNLOAD_DATA_STUDIO') %>
+				                           </a> 
+				                        </p>                       						                  
+						                </div> 
+						               </div>                                        
+                                    </div> 					                
+                                </div>
+                            </div>      
+                                           														
+							
+					<!-- Product List Ends Here -->
+										
+				</p>
+			</div>
+		</td>
+	</tr>
+</table>
+</script>
+<!-- END OF MASTER TABLE -->
+<!-- import javascripts -->
+<script type="text/javascript" language="JavaScript">
+	displayinstalled();
+	
+</script>
+</body>
+</html>

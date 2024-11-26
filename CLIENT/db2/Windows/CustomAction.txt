@@ -1,0 +1,273 @@
+AddAllLangsCA   Used by the DB2 Setup Wizard for GUI functionality
+AddDefaultLangCA	Used by the DB2 Setup Wizard for GUI functionality
+AddLocalInstancesCA	Used by the DB2 Setup Wizard for GUI functionality
+AddLocalPatchFeaturesCA	Ensure features are added to a required property for servicing
+AddOneLangCA	Used by the DB2 Setup Wizard for GUI functionality
+BrowseFpImagePathCA	Used by the DB2 Setup Wizard for GUI functionality
+BrowseRspfileCA	Used by the DB2 Setup Wizard for GUI functionality
+Check32bitDB2on64bitSystemCA	Determine if a 32 bit version of a DB2 product is installed on the same system
+CheckControlDBTypeCA	Deteremines which Control Databases are required
+CheckExistInstancesCA	Detects existing instances
+CheckExtraFeatureDependencyCA	Determine any dyanamic feature dependencies
+CheckFixpakLevelCA	Determine the fixpak level of the installed product
+CheckForUNCInPathCA Verify that a UNC formatted directory is set in the PATH environment variable
+CheckInfoCenterCA	Determine if the DB2 information center is installed
+CheckInstallDirAttributesCA	Determine attributes of the installation directory selected.
+CheckInstanceTypeCA	Determine the instance type of an existing instance
+CheckProductUseJavaCA	Determine if this product uses Java
+CheckProtocolCompsCA	Query which protocols are supported by this product
+CheckRemoteInstNameCA	Determine if an a remote instance exists during a DPF installation
+CheckSatelliteSyncCA	Determine if satellite is being configured
+CheckSelectedFeaturesCA	Ensure the validity of the features selected
+CheckTypicalInstallLangsCA	Dynamically select the languages to install based on the users system settings
+CheckUserGroupsCA	Verifies that a group is valid
+ChgDoceDefaultInstallDirCA	Update the default install path of the DB2 Information Center
+ChgShortcutFolderCA	Update the shortcut directory
+ChgStartMenuFolderCA	Update a property used to determine the start menu
+ChgStartupFolderCA	Update a property used for deciding where to put items that need to be automatically started after reboot
+CleanUpExecuteSequenceCA	Internal cleanup of loaded dlls and temporary files
+CleanUpGUISequenceCA	Internal cleanup of loaded dlls and temporary files
+CommonGuiSilentCA	Install initialization
+CopyAdditionalFilesForAdminCA	Used to copy files that are not known by the MSI
+CopyHotfixCA	Used to copy a hotfix for installation during a normal install
+CreateDatabaseListCA	Determine a list of existing databases
+CreateDomainListCA	Determine list of available domains
+CreateInstanceListCA	Determine a list of instances to create
+CreateRemoteInstListCA	Query list of instances on a remote machine
+CreateSchemaListCA	Set a list of Schemas in a GUI control
+CreateTextExtenderLvLFileCA	Used to keep required files during Migration
+DLLWrapCleanup	Internal processing
+DLLWrapStartup	Internal processing
+DWUS_Bootstrap.C3A146F5_4B48_11D5_A819_00B0D0428C0C	Macrovision Update Service internal processing
+DWUS_Defprofile.C3A146F5_4B48_11D5_A819_00B0D0428C0C	Macrovision Update Service internal processing
+DWUS_Host.C3A146F5_4B48_11D5_A819_00B0D0428C0C	Macrovision Update Service internal processing
+DWUS_Instance.C3A146F5_4B48_11D5_A819_00B0D0428C0C	Macrovision Update Service internal processing
+DWUS_Language.C3A146F5_4B48_11D5_A819_00B0D0428C0C	Macrovision Update Service internal processing
+DWUS_Language_Instance.C3A146F5_4B48_11D5_A819_00B0D0428C0C	Macrovision Update Service internal processing
+DWUS_Register.C3A146F5_4B48_11D5_A819_00B0D0428C0C	Macrovision Update Service internal processing
+DWUS_RegisterPU.C3A146F5_4B48_11D5_A819_00B0D0428C0C	Macrovision Update Service internal processing
+DWUS_Schedule.C3A146F5_4B48_11D5_A819_00B0D0428C0C	Macrovision Update Service internal processing
+DWUS_SchedulePU.C3A146F5_4B48_11D5_A819_00B0D0428C0C	Macrovision Update Service internal processing
+DWUS_Unregister.C3A146F5_4B48_11D5_A819_00B0D0428C0C	Macrovision Update Service internal processing
+DWUS_UnregisterPU.C3A146F5_4B48_11D5_A819_00B0D0428C0C	Macrovision Update Service internal processing
+DealWithMSCSBeforeDataMoveCA	Do any prereqs for MSCS 
+DeferredCallURE_CA	Perform Up and Running
+DeferredCleanUpDeferredExecuteSequenceCA	Peform internal cleanup of temporary files and loaded dlls
+DeferredConfigODBCCA	Configure ODBC Driver
+DeferredCopyBackINIFilesCA	Restore some migrated DB2 settings
+DeferredCopyVCAssembliesCA	Copy VC private assemblies used during install
+DeferredCopyDsDriverCfgFileCA	Copy db2dsdriver.cfg file
+DeferredCreateDB2ExtendedSecurityGroupsCA Create extended security group
+DeferredDealWithMSCSAfterMigration	Restart any MSCS related services required
+DeferredEnableTracingExecuteSequence	Setup tracing of the DB2 Setup Wizard
+DeferredEnableUREObservers	Setup message queues
+DeferredEndInstallEventLogCA	Log the end of the install action
+DeferredGeneratePostInstallInfoCA Generate post install information
+DeferredInitializeURERunTimeLocationCA	Internal processing
+DeferredInstallHotfixCA	Install a hotfix included in the installation package
+DeferredKillProcessesCA	Kill processes that are holding DB2 files
+DeferredLogPostInstallMsgCA	Log a post install messages for display at the end of the installation.
+DeferredMigrationRetrieveFilesCA	Retrieve files saved for migration
+DeferredRegisterDB2ProviderToVSCA	Register the DB2 .NET Data Provider in Visual Studio 2005
+DeferredRegisterDataProviderCA	Register the DB2 .NET Data Provider
+DeferredSelfRegisterDllsCA	Register Various DB2 Dlls
+DeferredSetCurrentDirectoryAndLoadLibCA	Internal processing
+DeferredStartDASCA Start db2admin.exe
+DeferredSSHKeyGenCA     Register rsa and dsa keys through ssh-keygen
+DeferredUpdateInstallCopiesProfileCA	Update the system for multiple DB2 copies
+DeferredValidateDsDriverFileCA		Validate db2dsdriver.cfg and register dsns
+Deferred_UREStartCA	Setup requirements to do Install Up and Running
+DetectDOTNETEnvCA	Determine the level of .NET on the system
+DetectOldDB2ProductsCA	Determine what DB2 products are on the system
+DetectProdForFixpakCA	Determine what products need to be updated
+DetectUninstallCA	Determine if we are running in an uninstall scenario
+Display	Used for Debugging the installation
+Display1	Used for Debugging the installation
+Display2	Used for Debugging the installation
+Display3	Used for Debugging the installation
+DisplayHelpCA	Used to display the help dialog
+DisplayInstForQPSetupCA	Show instances available for DB2 Query Patroller to use
+DisplayPostInstallInfoCA	Put the post install information on the last panel of the installation.
+DisplayProtocolsCA	Display Available protocols
+DisplaySummaryCa	Display a summary of the actions that will be done by the install
+EnableTextSearchCA	Enable text search functionality
+EnableSSHServerCA	Enable SSH Server functionality
+EnableTracingExecuteSequenceCA	Internal processing
+EnableTracingUISequenceCA	Internal processing
+EnableUREObserversCA	Internal processing
+EndDialogCA	Used to exity a dialog
+EndInstallEventLogCA	Closes the install event log
+GenerateBothUserResponseFilesCA	Generate response files recording the options you have selected during the install.
+GenerateGUIRspFileCA	Generate response files recording the options you have selected during the install.
+GeneratePostInstallInfoCA	Format post install information
+GenerateUserResponseFileCA	Generate response files recording the options you have selected during the install.
+GetAndDisplayDbForQpCA	Display available databases for DB2 Query Patroller setup
+GetAvailableLangsCA	Get langauges available in the image
+GetDatabaseObjectsInfoCA	Get information about the contents of a database
+GetExistContactAddressCA	Get existing DB2 contact information
+GetExistTableSpacesCA	Get existing tables space information
+GetExistingInstallNameCA	Get the install name that we are using
+GetNextDialog	Get a dialog that should come next in the GUI sequence
+GetNextDialog_DasCA	Get a dialog that should come next in the GUI sequence1
+GetNextDialog_InstCA	Get a dialog that should come next in the GUI sequence
+GetNextDlg_Lang_mntnCA	Get a dialog that should come next in the GUI sequence
+GetNodeGroupsCA	Get available node groups
+GetNodeNumOfNodeGroupCA	Get node numbers within a node group
+GetNodeNumbersCA	Get existing node numbers of a DB2 system
+GetPatchInfoCA	Get information about a patch being installed
+GetRemoteCopyNameAndSetCA	Sync up a copy name with a existing system in a cluster
+GetSelectedLanguagesCA	Determine which languages were selected by the user
+GetSelectedNodesForQPCA	Get nodes to use with QP
+ISForceReboot.E7D6BCFA_9BFA_49D4_A1EE_767B7FD61E38	Force a reboot at the end of an install
+InitSilentInstallCA	Setup required silent install paramaters
+InitializeURERunTimeLocationCA	Internal processing
+InstallFixpakImagesCA	Install required fixpaks for the products installed
+KeepINIFilesCA	Save ini files before product removal during migration
+KeepPatchInfoCA	Save information about the patch before installing it
+KeepSelectedLangsCA	Used for DB2 Setup Wizard GUI functionality.
+LAPCheckAndSetCA	Internal processing
+LaunchDSACInstallCA	Internal processing
+LaunchDSDWBInstallCA	Internal processing
+LaunchFirstStepCA	Launch first steps application at the end of the installation
+LaunchVSAIInstallCA	:Launch VSAI install at the end of the installation
+LoadProductDescriptionCA	Load a description of the current product to display to a user
+MarkTraceFileCA	Internal processing
+MigDeferCleanupExecuteSequence	Internal processing
+MigDeferEnableTracingExecuteSequenceCA	Internal processing
+MigDeferKillProcessesCA	Kill processes before a migration is performed
+MigDeferMigrationBackupElev	Backup required settings before migration
+MigDeferMigrationCleanupX64CA	Cleanup leftovers during a 32 - 64 bit migration.
+MigDeferSetCurrentDirectoryAndLoadLibCA	Internal processing
+MigrationCleanupCA	Cleanup leftovers during a migration scenario
+MoveAllLeftCA	Used for DB2 Setup Wizard GUI functionality
+MoveAllNodesLeftCA	Used for DB2 Setup Wizard GUI functionality
+MoveAllNodesRightCA	Used for DB2 Setup Wizard GUI functionality
+MoveOneLeftCA	Used for DB2 Setup Wizard GUI functionality
+MoveOneNodeLeftCA	Used for DB2 Setup Wizard GUI functionality
+MoveOneNodeRightCA	Used for DB2 Setup Wizard GUI functionality
+NetBrowseCA	Browse for DPF systems
+NoCancelAfterURECA	Used for DB2 Setup Wizard GUI functionality
+PopulateDatabaseListBoxCA	Used for DB2 Setup Wizard GUI functionality
+PopulateSchemaListBoxCA	Used for DB2 Setup Wizard GUI functionality
+PrePatchExecuteCA	Perform required actions before applying a patch
+PrintLA	Prints the license agreement
+ReEvaluateFirstStepsStartupCA	Determine if first steps should autostart
+RebootMsg.E7D6BCFA_9BFA_49D4_A1EE_767B7FD61E38	Display a message prior to rebooting
+RecalcuateFeatures	Calculate feature cost
+RelaunchLaunchpadCA	launch the launchpad
+RemoveAllButHighestRankProductCA	remove all products except that most complete product durig a migration scenario on Vista
+ResetDefaultDoceSrvcCA	Used for DB2 Setup Wizard GUI functionality
+ResetREINSTALLCA    Internal processing
+ResetREINSTALLMODECA	Internal processing
+ResetValuesForQpCA	Used for DB2 Setup Wizard GUI functionality
+ResyncMetaDBLocalCA	Used for DB2 Setup Wizard GUI functionality
+RollbackProcessCA	Trigger a rollback
+SavePropertiesForDeferredAgainCA	Internal processing
+SavePropertiesForDeferredCA	Internal processing
+SaveFeatureListCA	Called to save selected feature list in a property for deferred custom action use
+SecondReinstallCA	Internal processing
+SecondReinstallModeCA	Internal processing
+SetARPINSTALLLOCATIONCA	Internal processing
+SetARPReadme	Internal processing
+SetAllUsersProfileNT	Internal processing
+SetAutostartPropertyCA	Determine whether DB2 services should autostart or not
+SetAutostartRadioButtonsCA	Used for DB2 Setup Wizard GUI functionality
+SetCtlsrvInstDomainUserCA	Used for DB2 Setup Wizard GUI functionality
+SetDB2COPYAppDataDirCA	Internal processing
+SetDB2CtrlsvInstCA	Used for DB2 Setup Wizard GUI functionality
+SetDB2InstanceCA	Used for DB2 Setup Wizard GUI functionality
+SetDasDomainUserCA	Used for DB2 Setup Wizard GUI functionality
+SetDefaultAutostartCA	Used for DB2 Setup Wizard GUI functionality
+SetDefaultDoceSrvcCA	Used for DB2 Setup Wizard GUI functionality
+SetDefaultPortCA	Used for DB2 Setup Wizard GUI functionality
+SetDefaultValuesForQpCA	Used for DB2 Setup Wizard GUI functionality
+SetFcmPortRangeCA	Used for DB2 Setup Wizard GUI functionality
+SetInitialPropertiesCA	Internal processing
+SetInstDomainUserCA	Used for DB2 Setup Wizard GUI functionality
+SetInstOwnerUserInfoCA	Used for DB2 Setup Wizard GUI functionality
+SetInstUserInfoCA	Used for DB2 Setup Wizard GUI functionality
+SetInstallDirLongPathPropertyCA	Internal processing
+SetMsiRebootProp.C3A146F5_4B48_11D5_A819_00B0D0428C0C	Determine if a reboot is needed
+SetOSSecurityDomainCA	Set domain used for extended security
+SetPrimaryFolderCA	Internal processing
+SetPropertiesForConditionsCA	Internal processing
+SetTextSearchPropCA	Internal processing
+SetValuesForQpInstCA	Internal processing
+SetupProductTitleProperties	Set title of the product in the DB2 Setup Wizard GUI
+SetupRegistryPropertiesCA	Internal processing
+ShowDefaultCliCopyCheckboxCA	Used for DB2 Setup Wizard GUI functionality
+ShowProcessesToBeKilledCA	Displays list of process that will be shutdown
+SSHportinuseCA	Verify if port 22 is already in use
+StartInstallEventLogCA	Start the install event log
+StartStartupShortcutsCA	Run shortcuts added to the startup folder
+StreamLibrarysCA	Internal processing
+SxsInstallCA	VC 8.0 runtime install
+SxsUninstallCA	VC 8.0 runtime uninstall
+SystemFolder.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E	Internal processing
+SystemFolder.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E	Internal processing
+SystemFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E	Internal processing
+SystemFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E	Internal processing
+TestDumpCA	Debugging custom action
+UninsDeferCleanupServicesFileCA	Cleanup services file during uninstall
+UninsDeferDeRegisterLicenseCA	Deregister licenses during uninstall
+UninsDeferDeRegisterODBCCA	Unregister ODBC
+UninsDeferDeleteAllEnvVarCA	Delete environment variables that were added during the installation
+UninsDeferDropInstancesCA	Drop any instances associated with this installation
+UninsDeferEnableTracingExecuteSequenceCA	Internal processing
+UninsDeferRemoveDefaultCICopyCA	Remove the default CLI Copy on the system
+UninsDeferRemoveFirstStepsFromStartUpCA	Remove firststeps from the startup folder
+UninsDeferRemoveInstallDirCA	Cleanup installation directory
+UninsDeferRemoveNTServicesCA	Deregister any NT services that may be left over
+UninsDeferRemoveUsersGroupsCA	Remove the users and groups created during the installation
+UninsDeferSelfDeregisterDllsCA	Deregister any dlls registered in SelfregisterDLLsCA
+UninsDeferSetCurrentDirectoryAndLoadLibCA	internal processing
+UninsDeferUninstallCleanupCA	Internal processing
+UninsDeferUnregisterDataProviderCA	Unregister DB2 .NET Data provider
+UninstallDocCA	Uinstall the DB2 Information Center
+UpdateServiceCA	Call Update Service to register product
+ValidatePanelCA Used for DB2 Setup Wizard GUI functionality
+VerifyFpImagePathCA	Used for DB2 Setup Wizard GUI functionality
+VerifyOneFeatureSelectedCA	Used for DB2 Setup Wizard GUI functionality
+VerifyPrereqsCA	Verify prerequisites are met before proceeding with the installation
+VerifyProdComponentsRegCA	Verify uninstalled components
+VerifyUninstallPrereqsCA	Verify prerequisites are met before proceeding with the uninstallation
+ViewFeaturesForInstallTypeCA	Used for DB2 Setup Wizard GUI functionality
+WarnUserAboutPreviousProductsCA	Warn about removing old DB2 related products
+WindowsFolder.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E	Internal processing
+WindowsFolder.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E	Internal processing
+WindowsFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E	Internal processing
+WindowsFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E	Internal processing
+WriteOracleUpdateMsgCA	Used for DB2 Setup Wizard GUI functionality
+getNextDlg_DAS_exists	Used for DB2 Setup Wizard GUI functionality
+iResetProductNameCA	Used for DB2 Setup Wizard GUI functionality
+iaBrowseRspFileCA	Used for DB2 Setup Wizard GUI functionality
+iaGenerateOtherRspFileCA	Used to generate a response file based on selected settings
+iaValidateRspFileCA	Used to validate response file entered
+isNextDlgSummaryCA	Determine if the next dialog that will display is the summary
+listenForCtrlTablespaceCA	Used for DB2 Setup Wizard GUI functionality
+listenForDatabasesComboCA	Used for DB2 Setup Wizard GUI functionality
+listenForResultTablespaceCA	Used for DB2 Setup Wizard GUI functionality
+postInstanceSetupCA	Used for DB2 Setup Wizard GUI functionality
+preInstanceSetupCA	Used for DB2 Setup Wizard GUI functionality
+preMigrationBackupCA	Backup files used during migration
+reevalFeatureConditionsCA	Internal processing
+selectLanguageFeaturesCA	Used for DB2 Setup Wizard GUI functionality
+setAllUsersProfile2K	Internal processing
+setCurrentDirectoryAndLoadLibCA	Internal processing
+setGenericDialogTitlePropertyCA	Used for DB2 Setup Wizard GUI functionality
+setInstInfoForMigrationCA	Used for DB2 Setup Wizard GUI functionality
+setInstallLangCA	Set the installation language
+setProcessIDOfLauncherCA	Set property of the process ID of the launching program
+setUserProfileNT	Internal processing
+set_FILE_property	Internal processing
+set_INSTALLDIR_directory	Internal processing
+set_INSTALL_NAME_AND_SELECT_propertyCA	Internal processing
+set_INSTALL_NAME_propertyCA	Internal processing
+set_INSTALL_OPTION_propertyCA	Internal processing
+set_INSTALL_TYPE_propertyCA	Internal processing
+set_INSTALL_driveCA	Internal processing
+set_MIGRATE_PRIOR_VERSIONSCA	Internal processing
+set_USERNAME_property	Internal processing
+stopThreadsCA	Internal processing
+unset_DB2_COPY_NAME_property	Internal processing
+unset_PROP_RSP_DEFAULT_COPY_property	Internal processing

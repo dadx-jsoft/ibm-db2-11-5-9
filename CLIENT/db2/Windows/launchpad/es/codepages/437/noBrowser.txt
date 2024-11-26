@@ -1,0 +1,5 @@
+Se ha producido un error al iniciar el área de ejecución para la instalación de DB2.  Este error normalmente
+se produce cuando el área de ejecución para la instalación de DB2 no puede encontrar un navegador soportado
+(Firefox 2.0+, Mozilla 1.7+, Internet Explorer 6.0+, SeaMonkey 1.1.4+). 
+
+Compruebe el Centro de información de DB2 (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1) para ver una lista actualizada de los navegadores soportados.

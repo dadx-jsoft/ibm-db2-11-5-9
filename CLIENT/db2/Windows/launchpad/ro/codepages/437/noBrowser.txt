@@ -1,0 +1,4 @@
+A apãrut la pornirea DB2 Setup Launchpad.  Aceastã eroare apare deobicei când DB2 Setup Launchpad
+nu poate sã gãseascã un browser suportat (Firefox 2.0+, Mozilla 1.7+, Internet Explorer 6.0+, SeaMonkey 1.1.4+). 
+
+Verificaþi Centrul de informare DB2 (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1) pentru o listã la zi a browser-elor suportate.

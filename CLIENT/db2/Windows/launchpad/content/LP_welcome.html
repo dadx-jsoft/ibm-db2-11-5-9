@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<link rel="stylesheet" type="text/css" media="all" href="LP_nav.css">
+	<link rel="stylesheet" type="text/css" media="all" href="LP_lang.css">
+	<script type="text/javascript" LANGUAGE="JavaScript" src="LP_nav.js"></script>
+	<script type="text/javascript" LANGUAGE="JavaScript" src="db2version.js"></script>	
+</head>
+
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+<!-- MASTER TABLE -->
+<script src="../jscp.js">
+	<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">	
+		<tr valign="top">			
+			<td class="content">  
+				<!-- CONTENT FRAME -->
+				<div class="content_width">
+					<p>					
+						<div id="welcomeDB2">
+							<span class="head1">
+								<%= top.formatmsg(property('welcome_msg_ese'), '<span class="versionArea">&nbsp;</span>') %>
+							</span>
+						</div>
+						<div id="welcomeIBMDataServer">
+							<span class="head1">
+								<%= top.formatmsg(property('welcome_msg_DS'), '<span class="versionArea">&nbsp;</span>') %>
+							</span>
+						</div>						
+					</p>
+					<p>					
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr> 
+								<td class="imageInText_placement">
+									<img src="images/LP_welcome.gif" width="65" height="58" border="0">
+								</td>
+								<td class="tableText">
+                                                                        <%= top.formatmsg(property('LPAD_WELCOME_DESC1'),'<span class="primaryProduct">&nbsp;</span>','<span class="versionArea">&nbsp;</span>') %>
+									<%= property('LPAD_WELCOME_DESC2') %>
+									<%= top.formatmsg(property('LPAD_WELCOME_DESC3'), '<br><br>') %>
+								</td>
+							</tr>
+						</table>
+						<p>			
+				            <a class="solo" href="javascript:linkToDB2Info()">
+				              <img src="images/info_link.gif" alt="<%= property('welcome_altImageText') %>" width="25" height="20" border="0">
+				              <%= property('LPAD_WELCOME_DB2_REFER') %>
+				            </a> 
+						</p>
+					</p>
+					<p>
+						<center>
+							<span class="copyright">
+								<%= top.formatmsg(property('welcome_copyright'),'<span class="yearArea">&nbsp;</span>','<br/>') %>
+							</span>
+						</center>
+					</p>
+				</div>
+			</td>
+		</tr>
+	</table>
+</script>
+<!-- END OF MASTER TABLE -->
+
+<!-- import javascripts -->
+<script type="text/javascript" language="JavaScript">
+	showWelcomeTitle();
+	displayLPVersion();
+	displayLPCopyRightYear();
+        displayPrimaryProduct();
+</script>
+
+</body>
+</html>

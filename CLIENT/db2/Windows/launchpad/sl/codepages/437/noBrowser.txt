@@ -1,0 +1,3 @@
+Med zaganjanjem lansirnika za nastavitev DB2 je prišlo do napake.  Do te znaèilne napake pride, èe lansirnik za nastavitev DB2 ne more najti podprtega brskalnika (Firefox 2.0+, Mozilla 1.7+, Internet Explorer 6.0+, SeaMonkey 1.1.4+). 
+
+V informacijskem centru DB2 (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1) poišèite najnovejši seznam podprtih brskalnikov.

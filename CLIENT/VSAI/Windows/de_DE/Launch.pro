@@ -1,0 +1,22 @@
+# This file is for the language: en_US
+DB2_SETUP=DB2-Installationsprogramm
+LANGUAGE=Sprache
+RESPONSE_FILE=Antwortdatei
+LOG_FILE=Protokolldatei
+TRACE_FILE=Tracedatei
+PATH_NAME=Installationspfad
+HELP_OPTION=generiert diesen Benutzungshinweis.
+HELP_OPTION=generiert diesen Benutzungshinweis.
+C_OPTION=DB2 Setup kehrt umgehend zurück, ohne auf untergeordnete Prozesse zu warten.
+F_OPTION=erzwingt das Stoppen von DB2-Prozessen vor der Installation.
+I_OPTION=aus zwei Buchstaben bestehender Code für die bevorzugte Sprache.
+L_OPTION=vollständiger Pfad und Name der Protokolldatei.
+M_OPTION=zeigt während der Ausführung einer unbeaufsichtigten Installation einen Fortschrittsanzeiger an. Auf Windows 7-Systemen werden möglicherweise einige Eingabeaufforderungen angezeigt.
+P_OPTION=vollständiger Pfadname für das Installationsverzeichnis.
+U_OPTION=vollständiger Pfad und Name der Antwortdatei.
+TRACE_OPTION=erstellt eine Datei mit Trace-Informationen zur Installation.
+ERROR_REQUESTED_LANGUAGE=Die angeforderte Sprache, '%s', ist in diesem DB2-Installationsimage nicht enthalten.
+ERROR_RSP_FILE_INVALID=FEHLER: Es ist ein Problem mit der Antwortdatei '%s' aufgetreten. Die Datei ist nicht vorhanden.
+ERROR_RSP_KW_INVALID=FEHLER: Es ist ein Problem mit der Antwortdatei '%s' aufgetreten. Das Schlüsselwort '%s' in der Antwortdatei ist ungültig.
+IMSG_PICKER_PATH_NAME=  DB2-Installationspfad:
+IMSG_CLIPICKER_PATH_NAME=  Installationspfad:

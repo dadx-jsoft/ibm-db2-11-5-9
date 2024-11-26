@@ -1,0 +1,4 @@
+启动 DB2 安装启动板时出错。通常，当 DB2 安装启动板找不到受支持的浏览器（Firefox 2.0+、Mozilla 1.7+、Internet Explorer 6.0+ 和 SeaMonkey 1.1.4+）时就会发生此错误。
+
+
+请参阅 DB2 信息中心 (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1) 以获取受支持浏览器的最新列表。

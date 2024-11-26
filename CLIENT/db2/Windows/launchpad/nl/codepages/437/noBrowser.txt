@@ -1,0 +1,3 @@
+Er is een fout opgetreden bij het openen van het DB2 Startvenster voor installatie. Deze fout treedt meestal op wanneer het DB2 Startvenster voor installatie geen ondersteunde browser (Firefox 2.0+, Mozilla 1.7+, Internet Explorer 6.0+, SeaMonkey 1.1.4+) kan vinden. 
+
+Raadpleeg het DB2 Informatiecentrum (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1) voor een actuele lijst van ondersteunde browsers.

@@ -1,0 +1,3 @@
+Došlo je do greške kod pokretanja lansirne podloge DB2 Postava.  Ova greška se tipièno pojavljuje kada lansirna podloga DB2 Postava ne može pronaæi podržani pretražitelj (Firefox 2.0+, Mozilla 1.7+, Internet Explorer 6.0+, SeaMonkey 1.1.4+). 
+
+Pogledajte ažurnu listu podržanih pretražitelja u DB2 Informacijskom centru (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1).

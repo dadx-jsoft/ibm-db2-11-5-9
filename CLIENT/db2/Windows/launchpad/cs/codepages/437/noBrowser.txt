@@ -1,0 +1,3 @@
+Došlo k chybì pøi spouštìní pøíruèního panelu instalace DB2. K této chybì obvykle dochází, jestliže pøíruèní panel instalace DB2 nemùže najít žádný podporovaný prohlížeè (Firefox 2.0 nebo novìjší, Mozilla 1.7 nebo novìjší, Internet Explorer 6.0 nebo novìjší, SeaMonkey 1.1.4 nebo novìjší). 
+
+Aktuální seznam podporovaných prohlížeèù naleznete v Informaèním centru DB2 (http://publib.boulder.ibm.com/infocenter/db2luw/v10r1).
